@@ -18,14 +18,19 @@
   font-size: 62.5%;
   --accent: #FFB700;
   --normal-font: #ffffff;
+  --decent-font: #8c8b8b;
   --background: #000000;
+  --decent-color: #1F1F1F;
+  --second-decent-color: #9f9f9f;
+  --main-font: "Interstate";
+  --heading-font: "trap", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Interstate";
-  font-size: 1.6rem;
+  font-family: var(--main-font);
+  font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
   color: var(--normal-font);
   background-color: var(--background);
 }
@@ -36,6 +41,7 @@ header {
   display: grid;
   place-items: center;
 }
+
 header nav {
   width: 100%;
   position: absolute;
@@ -76,12 +82,12 @@ header nav ul button {
 }
 
 h1 {
-  font-family: "trap", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--heading-font);
   font-weight: 800;
-  font-size: clamp(3rem, 5vw + 1rem, 10rem);
+  font-size: clamp(3.9rem, 5vw + 1rem, 9.5rem);
   color: var(--normal-font);
   -webkit-text-fill-color: var(--background);
-  -webkit-text-stroke: clamp(0.07rem, 0.1vw, 0.1rem) var(--normal-font);
+  -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--normal-font);
 }
 h1 .text__marking {
   color: var(--accent);
@@ -89,17 +95,22 @@ h1 .text__marking {
   -webkit-text-stroke: 0;
 }
 
+p {
+  line-height: 160%;
+  font-weight: 300;
+}
+
 .banner {
   background-color: var(--accent);
   padding: 1.5rem 0 1.3rem 0;
-  margin-bottom: 5rem;
+  margin-bottom: calc(5vw + 2rem);
   overflow: hidden;
   transform: rotate(-2deg);
 }
 .banner a {
   color: var(--background);
-  font-family: "trap", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: clamp(1.8rem, 2vw + 1rem, 3.5rem);
+  font-family: var(--heading-font);
+  font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
@@ -107,7 +118,47 @@ h1 .text__marking {
 .banner .text__marking {
   color: var(--accent);
   -webkit-text-fill-color: var(--accent);
-  -webkit-text-stroke: clamp(0.07rem, 0.1vw, 0.1rem) var(--background);
+  -webkit-text-stroke: clamp(0.05rem, 0.1vw, 0.1rem) var(--background);
+}
+
+.preview__section {
+  margin-bottom: calc(5vw + 2rem);
+}
+
+.project__preview {
+  padding: 2rem 0 1.75rem 0;
+  overflow: hidden;
+}
+.project__preview a {
+  color: var(--main-font);
+  font-family: var(--heading-font);
+  font-size: clamp(3rem, 2vw + 1rem, 5rem);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-text-stroke: clamp(0.1rem, 0.08vw, 0.1rem) var(--decent-font);
+}
+
+.project__preview:nth-child(even) {
+  background-color: var(--decent-color);
+  -webkit-text-fill-color: var(--decent-color);
+}
+
+.project__preview:nth-child(odd) {
+  -webkit-text-fill-color: var(--background);
+  border-top: 0.1rem solid var(--second-decent-color);
+  border-bottom: 0.1rem solid var(--second-decent-color);
+}
+
+.page__link {
+  display: inline-block;
+  width: 100%;
+  color: var(--second-decent-color);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  margin-top: calc(3vw + 1rem);
+  font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
 }
 
 /*# sourceMappingURL=style.css.map */
