@@ -139,15 +139,10 @@ p {
         -webkit-text-stroke: clamp(0.05rem, 0.1vw, 0.1rem) var(--background);
     }
 }
-//"font" statement nutzen und Statements zusammenfassen 7 @mixin?
-// siehe codepen: https://codepen.io/Noevenzahn/pen/bGrorKg
-
-//mehr Animationen, zB. on first load / scroll
 
 .preview__section {
     margin-bottom: calc(5vw + 2rem);
 }
-
 .project__preview {   
     padding: 2rem 0 1.75rem 0;
     overflow: hidden;
@@ -199,22 +194,42 @@ Footer {
     .contact {
         grid-area: contact;
         padding: 7rem;
+        background-color: var(--decent-color);
 
         h2 {
             margin-top: 0;
+        }
+        input, textarea {
+            font-family: var(--main-font);
+            border: none;
+            border-bottom: solid 2px var(--normal-font);
+            cursor: pointer;
+            padding: 1rem 0 1.2rem 1.5rem;
+            font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+            color: var(--normal-font);
+            width: 100%;
+            font-weight: normal;
+            background-color: var(--decent-color);
+        }
+        textarea {
+            resize: vertical;
         }
     }
     .highlights {
         grid-area: highlights;
         border-left: solid 1.5px var(--normal-font);
+        padding: 3rem;
 
         ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
+            line-height: 200%;
             
             a {
                 color: var(--normal-font);
                 font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
-                font-weight: 300;
+                font-weight: 500;
                 text-decoration: none;
             }
         }
@@ -229,9 +244,10 @@ Footer {
             border-right: solid 2px var(--normal-font);
         }
         button {
+            text-align: left;
             font-family: var(--main-font);
             cursor: pointer;
-            padding: 0.7rem 0 1.1rem 0;
+            padding: 1rem 0 1.2rem 1.5rem;
             font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
             color: var(--normal-font);
             width: 100%;

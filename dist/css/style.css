@@ -185,21 +185,41 @@ Footer {
 Footer .contact {
   grid-area: contact;
   padding: 7rem;
+  background-color: var(--decent-color);
 }
 Footer .contact h2 {
   margin-top: 0;
 }
+Footer .contact input, Footer .contact textarea {
+  font-family: var(--main-font);
+  border: none;
+  border-bottom: solid 2px var(--normal-font);
+  cursor: pointer;
+  padding: 1rem 0 1.2rem 1.5rem;
+  font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+  color: var(--normal-font);
+  width: 100%;
+  font-weight: normal;
+  background-color: var(--decent-color);
+}
+Footer .contact textarea {
+  resize: vertical;
+}
 Footer .highlights {
   grid-area: highlights;
   border-left: solid 1.5px var(--normal-font);
+  padding: 3rem;
 }
 Footer .highlights ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 200%;
 }
 Footer .highlights ul a {
   color: var(--normal-font);
   font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
 }
 Footer .button__group {
@@ -212,9 +232,10 @@ Footer .button__group a {
   border-right: solid 2px var(--normal-font);
 }
 Footer .button__group button {
+  text-align: left;
   font-family: var(--main-font);
   cursor: pointer;
-  padding: 0.7rem 0 1.1rem 0;
+  padding: 1rem 0 1.2rem 1.5rem;
   font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
   color: var(--normal-font);
   width: 100%;
