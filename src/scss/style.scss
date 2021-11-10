@@ -145,6 +145,25 @@ p {
 .second {
     transform: rotate(2.2deg);
 }
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    & p {
+        animation: marquee 45s linear infinite;
+        animation-play-state: paused;
+        margin: 0;
+    }
+    &:hover p {
+        animation-play-state: running;
+    }
+}
+@keyframes marquee {
+    0%   { transform: translate(10px, 0); }
+    50% { transform: translate(-300%, 0); }
+    100%   { transform: translate(10px, 0); }
+}
 .preview__section {
     margin-bottom: calc(3.5vw + 4rem);
 }
@@ -153,7 +172,7 @@ $degs: ("3": 1.4deg, "5": -1.8deg);
 @each $element, $deg in $degs {
     .project__preview:nth-child(#{$element}) {
         transform: rotate($deg);
-        margin: 0.7rem 0 0.7rem 0;
+        margin: 0.7rem 0;
     }
 }
 .project__preview {   
@@ -333,7 +352,7 @@ Footer {
     @each $element, $deg in $degs {
         .project__preview:nth-child(#{$element}) {
             transform: rotate($deg);
-            margin: 0.7rem 0 0.7rem 0;
+            margin: 0.7rem 0;
         }
     }
 
@@ -350,5 +369,35 @@ Footer {
     }
     .button__group > a {
         flex-basis: 50%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    $degs: ("3": 0.7deg, "5": -1.3deg);
+    
+    @each $element, $deg in $degs {
+        .project__preview:nth-child(#{$element}) {
+            transform: rotate($deg);
+            margin: 1.2rem 0;
+        }
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        
+        & p {
+            animation: marquee 60s linear infinite;
+            animation-play-state: paused;
+            margin: 0;
+        }
+        &:hover p {
+            animation-play-state: running;
+        }
+    }
+    @keyframes marquee {
+        0%   { transform: translate(10px, 0); }
+        50% { transform: translate(-200%, 0); }
+        100%   { transform: translate(10px, 0); }
     }
 }
