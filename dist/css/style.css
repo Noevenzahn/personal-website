@@ -84,11 +84,11 @@ button {
   background-color: var(--background);
   cursor: pointer;
   padding: 0.7rem 2rem 0.9rem 2rem;
+  transition: color 250ms, background-color 250ms;
 }
 button:hover {
   color: var(--background);
   background-color: var(--accent);
-  transition: color 250ms, background-color 250ms;
 }
 
 h1 {
@@ -109,7 +109,7 @@ h1 .text__marking {
 h2 {
   font-family: var(--heading-font);
   font-weight: 800;
-  font-size: clamp(3rem, 2vw + 1rem, 5rem);
+  font-size: clamp(3.5rem, 2.5vw + 1rem, 6rem);
 }
 
 p {
@@ -256,13 +256,19 @@ Footer {
   padding: 7rem;
   background-color: var(--decent-color);
 }
+.contact form {
+  display: flex;
+}
 .contact h2 {
-  margin-top: 0;
+  margin: 2.2rem 3vw 0 0;
+}
+.contact p {
+  margin: 2.5rem 0;
 }
 .contact input, .contact textarea {
   font-family: var(--main-font);
   border: none;
-  border-bottom: solid 2px var(--normal-font);
+  border-bottom: solid 1.5px var(--normal-font);
   cursor: pointer;
   padding: 1rem 0 1.2rem 1.5rem;
   font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
@@ -270,6 +276,9 @@ Footer {
   width: 100%;
   font-weight: normal;
   background-color: var(--decent-color);
+}
+.contact input:focus, .contact textarea:focus {
+  outline: solid 1px var(--accent);
 }
 .contact textarea {
   resize: vertical;
@@ -293,24 +302,38 @@ Footer {
   padding: 0;
   line-height: 200%;
 }
+.highlights ul li {
+  display: inline;
+}
 .highlights ul a {
-  color: var(--normal-font);
+  color: var(--accent);
   font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
   font-weight: 300;
   text-decoration: none;
+  border: solid 1px var(--accent);
+  border-radius: 3rem;
+  padding: 0.7rem 2rem 0.9rem 2rem;
+  line-height: 270%;
+  margin-right: 0.3rem;
+  white-space: nowrap;
+  transition: color 250ms, background-color 250ms;
+}
+.highlights ul a:hover {
+  color: var(--background);
+  background-color: var(--accent);
 }
 
 .button__group {
   grid-area: buttons;
   display: flex;
-  border-top: solid 2px var(--normal-font);
+  border-top: solid 1.5px var(--normal-font);
 }
 .button__group a {
   display: flex;
   align-items: center;
   position: relative;
   flex: 1;
-  border-right: solid 2px var(--normal-font);
+  border-right: solid 1.5px var(--normal-font);
   box-sizing: border-box;
 }
 .button__group a:last-of-type {
@@ -359,11 +382,15 @@ Footer {
     margin: 0.7rem 0;
   }
 
+  .contact form {
+    flex-direction: column;
+  }
+
   .button__group {
     flex-wrap: wrap;
   }
   .button__group a {
-    border-bottom: solid 2px var(--normal-font);
+    border-bottom: solid 1.5px var(--normal-font);
   }
   .button__group a:nth-child(2) {
     border-right: none;
@@ -371,6 +398,15 @@ Footer {
 
   .button__group > a {
     flex-basis: 50%;
+  }
+
+  Footer {
+    grid-template-areas: "contact contact contact contact" "highlights highlights highlights highlights" "buttons buttons buttons buttons" "credits credits credits credits";
+  }
+
+  .highlights {
+    border-left: none;
+    border-top: solid 1.5px var(--normal-font);
   }
 }
 @media screen and (min-width: 1400px) {
