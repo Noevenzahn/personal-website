@@ -1,0 +1,24 @@
+h1 {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: clamp(3.9rem, 5vw + 1rem, 9.5rem);
+    color: var(--normal-font);
+    -webkit-text-fill-color: var(--background);
+    -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--normal-font);
+    margin-bottom: 0;
+
+    .text__marking {
+        color: var(--accent);
+        -webkit-text-fill-color: var(--accent);
+        -webkit-text-stroke: 0;
+    }
+}
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: clamp(3.5rem, 2.5vw + 1rem, 6rem);
+}
+p {
+    line-height: 160%;
+    font-weight: 300;
+}

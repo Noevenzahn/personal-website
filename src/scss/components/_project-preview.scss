@@ -1,0 +1,57 @@
+.project__preview {   
+    padding: 2rem 0 1.75rem 0;
+    overflow: hidden;
+     
+    a {
+        color: var(--main-font);
+        font-family: var(--heading-font);
+        font-size: clamp(2.7rem, 2vw + 1rem, 5rem);
+        font-weight: bold;
+        text-decoration: none;
+        white-space: nowrap;
+        -webkit-text-stroke: clamp(0.1rem, 0.08vw, 0.1rem) var(--decent-font);
+    }
+    .text__marking {
+        color: var(--normal-font);
+        -webkit-text-fill-color: var(--normal-font);
+        -webkit-text-stroke: 0;
+    }
+    &:nth-child(even) {
+        background-color: var(--decent-color);
+        -webkit-text-fill-color: var(--decent-color);
+    }
+    &:nth-child(odd) {
+        background-color: var(--background);
+        -webkit-text-fill-color: var(--background);
+        border-top: 0.1rem solid var(--second-decent-color);
+        border-bottom: 0.1rem solid var(--second-decent-color);
+    }
+}
+$degs: ("3": 1.4deg, "5": -1.8deg); 
+@each $element, $deg in $degs {
+    .project__preview:nth-child(#{$element}) {
+        transform: rotate($deg);
+        margin: 0.7rem 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {    
+    $degs: ("3": 1.8deg, "5": -2.5deg);
+    
+    @each $element, $deg in $degs {
+        .project__preview:nth-child(#{$element}) {
+            transform: rotate($deg);
+            margin: 0.7rem 0;
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    $degs: ("3": 0.7deg, "5": -1.3deg);
+    
+    @each $element, $deg in $degs {
+        .project__preview:nth-child(#{$element}) {
+            transform: rotate($deg);
+            margin: 1.2rem 0;
+        }
+    }
+}

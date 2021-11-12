@@ -1,0 +1,166 @@
+Footer {
+    margin-top: calc(5vw + 2rem);
+    border-top: 1rem solid var(--normal-font);
+    display: grid;
+    grid-template-areas: 
+    "contact contact contact highlights"
+    "buttons buttons buttons buttons"
+    "credits credits credits credits";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact {
+    grid-area: contact;
+    padding: 7rem;
+    background-color: var(--decent-color);
+
+    form {
+        display: flex;
+    }
+    h2 {
+        margin: 2.2rem 3vw 0 0;
+    }
+    p {
+        margin: 2.5rem 0;
+    }
+    input, textarea {
+        font-family: var(--main-font);
+        border: none;
+        border-bottom: solid 1.5px var(--normal-font);
+        cursor: pointer;
+        padding: 1rem 0 1.2rem 1.5rem;
+        font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+        color: var(--normal-font);
+        width: 100%;
+        font-weight: normal;
+        background-color: var(--decent-color);
+
+        &:focus {
+            outline: solid 1px var(--accent);
+        }
+    }
+    textarea {
+        resize: vertical;
+    }
+    button {
+        background-color: var(--decent-color);
+
+        &:hover {
+            color: var(--background);
+            background-color: var(--accent);
+        }
+    }
+}
+.highlights {
+    grid-area: highlights;
+    border-left: solid 1.5px var(--normal-font);
+    padding: 3rem;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 200%;
+        
+        li {
+            display: inline;
+        }
+        a {
+            color: var(--accent);
+            font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+            font-weight: 300;
+            text-decoration: none;
+            border: solid 1px var(--accent);
+            border-radius: 3rem;
+            padding: 0.7rem 2rem 0.9rem 2rem;
+            line-height: 270%;
+            margin-right: 0.3rem;
+            white-space: nowrap;
+            transition: color 250ms, background-color 250ms;
+
+            &:hover {
+                color: var(--background);
+                background-color: var(--accent);
+            }
+        }
+    }
+}
+.button__group {
+    grid-area: buttons;
+    display: flex;
+    border-top: solid 1.5px var(--normal-font);
+
+    a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex: 1;
+        border-right: solid 1.5px var(--normal-font);
+        box-sizing: border-box;
+        
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+    button {
+        text-align: left;
+        font-family: var(--main-font);
+        cursor: pointer;
+        padding: 1rem 0 1.2rem 2rem;
+        font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+        color: var(--normal-font);
+        font-weight: normal;
+        border: none;
+        background-color: var(--background);
+    }
+    img {
+        position: absolute;
+        right: 2rem;
+        width: clamp(2.5rem, 1vw + 1rem, 3.5rem);
+    }
+    .intern {
+        transform: rotate(45deg);
+    }
+}
+.credits {
+    grid-area: credits;
+    background: var(--normal-font);
+    color: var(--background);
+
+    p {
+        margin: 0.5rem 0;
+        text-align: center;
+        font-size: clamp(0.4rem, 0.5vw + 1rem, 1.6rem);
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1000px) {    
+    .contact form {
+        flex-direction: column;
+    }
+    .button__group {
+        flex-wrap: wrap;
+        
+        a {
+            border-bottom: solid 1.5px var(--normal-font);
+            
+            &:nth-child(2) {
+                border-right: none;
+            }
+        }
+    }
+    .button__group > a {
+        flex-basis: 50%;
+    }
+    Footer {
+        grid-template-areas: 
+        "contact contact contact contact"
+        "highlights highlights highlights highlights"
+        "buttons buttons buttons buttons"
+        "credits credits credits credits";
+    }
+    .highlights {
+        border-left: none;
+        border-top: solid 1.5px var(--normal-font);
+    }
+}

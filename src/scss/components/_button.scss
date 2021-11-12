@@ -1,0 +1,17 @@
+button {
+    font-family: var(--main-font);
+    font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+    font-weight: 300;
+    border: solid 1px var(--accent);
+    border-radius: 3rem;
+    color: var(--accent);
+    background-color: var(--background);
+    cursor: pointer;
+    padding: 0.7rem 2rem 0.9rem 2rem;
+    transition: color 250ms, background-color 250ms;
+    
+    &:hover {
+        color: var(--background);
+        background-color: var(--accent);
+    }
+}

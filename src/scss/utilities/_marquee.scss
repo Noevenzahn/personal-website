@@ -1,0 +1,41 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    & p {
+        animation: marquee 45s linear infinite;
+        animation-play-state: paused;
+        margin: 0;
+    }
+    &:hover p {
+        animation-play-state: running;
+    }
+}
+@keyframes marquee {
+    0%   { transform: translate(10px, 0); }
+    50% { transform: translate(-300%, 0); }
+    100%   { transform: translate(10px, 0); }
+}
+
+@media screen and (min-width: 1400px) {
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        
+        & p {
+            animation: marquee 60s linear infinite;
+            animation-play-state: paused;
+            margin: 0;
+        }
+        &:hover p {
+            animation-play-state: running;
+        }
+    }
+    @keyframes marquee {
+        0%   { transform: translate(10px, 0); }
+        50% { transform: translate(-200%, 0); }
+        100%   { transform: translate(10px, 0); }
+    }
+}

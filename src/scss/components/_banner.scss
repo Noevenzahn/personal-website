@@ -1,0 +1,24 @@
+.banner {
+    background-color: var(--accent);
+    padding: 1.5rem 0 1.3rem 0;
+    margin-bottom: calc(3.5vw + 4rem);
+    
+    overflow: hidden;
+    transform: rotate(-2deg);
+    a {
+        color: var(--background);
+        font-family: var(--heading-font);
+        font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+        font-weight: bold;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .text__marking {
+        color: var(--accent);
+        -webkit-text-fill-color: var(--accent);
+        -webkit-text-stroke: clamp(0.05rem, 0.1vw, 0.1rem) var(--background);
+    }
+}
+.second {
+    transform: rotate(2.2deg);
+}

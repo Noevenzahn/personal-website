@@ -1,0 +1,18 @@
+header {
+    height: clamp(400px, 50vw, 1200px);
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+}
+.preview__section {
+    margin-bottom: calc(3.5vw + 4rem);
+}
+.about__section p {
+    margin: 0 2rem;
+    max-width: 80rem;
+}
+.about__preview {
+    display: grid;
+    place-items: center;  
+}
