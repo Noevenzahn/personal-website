@@ -1,0 +1,38 @@
+---
+title: portfolio
+layout: "base.njk"
+---
+<header id="portfolio__header">
+
+    {% include "nav.njk"%}
+
+    <div class="filter">
+        <div class="technology"></div>
+        <div class="technology"></div>
+        <div class="technology"></div>
+        <div class="technology"></div>
+        <div class="technology"></div>
+        <div class="technology"></div>
+    </div>
+</header>
+<main>
+    <section class="preview__section">
+        
+        {%- for post in collections.post -%}
+            <div class="project__preview marquee">
+                <p><a href="">
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> • 
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                </a></p>
+            </div>
+        {%- endfor -%}
+
+    </section>
+</main>

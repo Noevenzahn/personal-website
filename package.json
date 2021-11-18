@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "sass --watch src/scss/style.scss:dist/css/style.css"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch:sass": "sass --watch src/scss/style.scss:public/css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "sass": "^1.43.4"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noevenzahn/personal-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Noevenzahn/personal-website/issues"
+  },
+  "homepage": "https://github.com/Noevenzahn/personal-website#readme",
+  "description": ""
 }
