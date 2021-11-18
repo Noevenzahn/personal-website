@@ -1,0 +1,26 @@
+#portfolio-header {
+    height: clamp(250px, 20vw, 500px);
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+}
+.filter {
+    display: flex;
+    justify-self: end;
+    align-self: end;
+    margin: 2vw 0;
+
+    .technology {
+        width: clamp(4rem, 10vw, 20rem);
+        height: clamp(4rem, 10vw, 20rem);
+        margin: 0.5rem;
+        box-sizing: border-box;
+        background-color: var(--decent-color);
+        transition: background-color 250ms;
+
+        &:hover {
+            background-color: var(--second-decent-color);
+        }
+    }
+}

@@ -88,21 +88,21 @@ Footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.contact {
+#contact {
   grid-area: contact;
   padding: 7rem;
   background-color: var(--decent-color);
 }
-.contact form {
+#contact form {
   display: flex;
 }
-.contact h2 {
+#contact h2 {
   margin: 2.2rem 3vw 0 0;
 }
-.contact p {
+#contact p {
   margin: 2.5rem 0;
 }
-.contact input, .contact textarea {
+#contact input, #contact textarea {
   font-family: var(--main-font);
   border: none;
   border-bottom: solid 1.5px var(--normal-font);
@@ -114,16 +114,16 @@ Footer {
   font-weight: normal;
   background-color: var(--decent-color);
 }
-.contact input:focus, .contact textarea:focus {
+#contact input:focus, #contact textarea:focus {
   outline: solid 1px var(--accent);
 }
-.contact textarea {
+#contact textarea {
   resize: vertical;
 }
-.contact button {
+#contact button {
   background-color: var(--decent-color);
 }
-.contact button:hover {
+#contact button:hover {
   color: var(--background);
   background-color: var(--accent);
 }
@@ -209,7 +209,7 @@ Footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .contact form {
+  #contact form {
     flex-direction: column;
   }
 
@@ -363,7 +363,7 @@ header nav ul a {
 .skillset .skill {
   width: clamp(7rem, 17vw, 20rem);
   height: clamp(7rem, 17vw, 20rem);
-  margin: 1.5vw 1.5vw;
+  margin: 1.5vw;
   box-sizing: border-box;
   background-color: var(--decent-color);
 }
@@ -372,7 +372,7 @@ header nav ul a {
   display: grid;
   place-items: center;
   width: 100%;
-  margin-top: 5rem;
+  margin: 6rem 0;
 }
 
 .date-info {
@@ -400,6 +400,31 @@ header nav ul a {
   width: 50%;
   margin-top: 0.5rem;
   font-weight: bold;
+}
+
+#portfolio-header {
+  height: clamp(250px, 20vw, 500px);
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.filter {
+  display: flex;
+  justify-self: end;
+  align-self: end;
+  margin: 2vw 0;
+}
+.filter .technology {
+  width: clamp(4rem, 10vw, 20rem);
+  height: clamp(4rem, 10vw, 20rem);
+  margin: 0.5rem;
+  box-sizing: border-box;
+  background-color: var(--decent-color);
+  transition: background-color 250ms;
+}
+.filter .technology:hover {
+  background-color: var(--second-decent-color);
 }
 
 header {

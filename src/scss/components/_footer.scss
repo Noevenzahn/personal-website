@@ -8,7 +8,7 @@ Footer {
     "credits credits credits credits";
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.contact {
+#contact {
     grid-area: contact;
     padding: 7rem;
     background-color: var(--decent-color);
@@ -135,7 +135,7 @@ Footer {
 }
 
 @media screen and (max-width: 1000px) {    
-    .contact form {
+    #contact form {
         flex-direction: column;
     }
     .button__group {
