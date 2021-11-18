@@ -27,7 +27,7 @@
         border-bottom: 0.1rem solid var(--second-decent-color);
     }
 }
-$degs: ("3": 1.4deg, "5": -1.8deg); 
+$degs: ("3": 1.4deg, "5": -1.8deg, "7": 1.4deg, "9": -1.8deg, "11": 1.4deg, "13": -1.8deg, "15": 1.4deg, "17": -1.8deg); 
 @each $element, $deg in $degs {
     .project__preview:nth-child(#{$element}) {
         transform: rotate($deg);
@@ -36,7 +36,7 @@ $degs: ("3": 1.4deg, "5": -1.8deg);
 }
 
 @media screen and (max-width: 1000px) {    
-    $degs: ("3": 1.8deg, "5": -2.5deg);
+    $degs: ("3": 1.8deg, "5": -2.5deg, "7": 1.8deg, "9": -2.5deg, "11": 1.8deg, "13": -2.5deg, "15": 1.8deg, "17": -2.5deg);
     
     @each $element, $deg in $degs {
         .project__preview:nth-child(#{$element}) {
@@ -46,7 +46,7 @@ $degs: ("3": 1.4deg, "5": -1.8deg);
     }
 }
 @media screen and (min-width: 1400px) {
-    $degs: ("3": 0.7deg, "5": -1.3deg);
+    $degs: ("3": 0.7deg, "5": -1.3deg, "7": 0.7deg, "9": -1.3deg, "11": 0.7deg, "13": -1.3deg, "15": 0.7deg, "17": -1.3deg);
     
     @each $element, $deg in $degs {
         .project__preview:nth-child(#{$element}) {

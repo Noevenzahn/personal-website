@@ -251,6 +251,10 @@ header nav .logo {
   font-weight: 500;
   line-height: 110%;
 }
+header nav .logo a {
+  color: var(--normal-font);
+  text-decoration: none;
+}
 header nav ul {
   grid-area: nav;
   list-style: none;
@@ -329,6 +333,36 @@ header nav ul a {
   margin: 0.7rem 0;
 }
 
+.project__preview:nth-child(7) {
+  transform: rotate(1.4deg);
+  margin: 0.7rem 0;
+}
+
+.project__preview:nth-child(9) {
+  transform: rotate(-1.8deg);
+  margin: 0.7rem 0;
+}
+
+.project__preview:nth-child(11) {
+  transform: rotate(1.4deg);
+  margin: 0.7rem 0;
+}
+
+.project__preview:nth-child(13) {
+  transform: rotate(-1.8deg);
+  margin: 0.7rem 0;
+}
+
+.project__preview:nth-child(15) {
+  transform: rotate(1.4deg);
+  margin: 0.7rem 0;
+}
+
+.project__preview:nth-child(17) {
+  transform: rotate(-1.8deg);
+  margin: 0.7rem 0;
+}
+
 @media screen and (max-width: 1000px) {
   .project__preview:nth-child(3) {
     transform: rotate(1.8deg);
@@ -336,6 +370,36 @@ header nav ul a {
   }
 
   .project__preview:nth-child(5) {
+    transform: rotate(-2.5deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(7) {
+    transform: rotate(1.8deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(9) {
+    transform: rotate(-2.5deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(11) {
+    transform: rotate(1.8deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(13) {
+    transform: rotate(-2.5deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(15) {
+    transform: rotate(1.8deg);
+    margin: 0.7rem 0;
+  }
+
+  .project__preview:nth-child(17) {
     transform: rotate(-2.5deg);
     margin: 0.7rem 0;
   }
@@ -347,6 +411,36 @@ header nav ul a {
   }
 
   .project__preview:nth-child(5) {
+    transform: rotate(-1.3deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(7) {
+    transform: rotate(0.7deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(9) {
+    transform: rotate(-1.3deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(11) {
+    transform: rotate(0.7deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(13) {
+    transform: rotate(-1.3deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(15) {
+    transform: rotate(0.7deg);
+    margin: 1.2rem 0;
+  }
+
+  .project__preview:nth-child(17) {
     transform: rotate(-1.3deg);
     margin: 1.2rem 0;
   }
@@ -421,7 +515,7 @@ header nav ul a {
 }
 
 #portfolio__header {
-  height: clamp(250px, 20vw, 500px);
+  height: clamp(20rem, 25vw, 38rem);
   width: 100%;
   display: grid;
   place-items: center;
@@ -434,8 +528,8 @@ header nav ul a {
   margin: 2vw 0;
 }
 .filter .technology {
-  width: clamp(4rem, 10vw, 20rem);
-  height: clamp(4rem, 10vw, 20rem);
+  width: clamp(7rem, 10vw, 15rem);
+  height: clamp(7rem, 10vw, 15rem);
   margin: 0.5rem;
   box-sizing: border-box;
   background-color: var(--decent-color);

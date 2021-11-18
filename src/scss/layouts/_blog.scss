@@ -1,5 +1,5 @@
 #portfolio__header {
-    height: clamp(250px, 20vw, 500px);
+    height: clamp(20rem, 25vw, 38rem);
     width: 100%;
 
     display: grid;
@@ -12,8 +12,8 @@
     margin: 2vw 0;
 
     .technology {
-        width: clamp(4rem, 10vw, 20rem);
-        height: clamp(4rem, 10vw, 20rem);
+        width: clamp(7rem, 10vw, 15rem);
+        height: clamp(7rem, 10vw, 15rem);
         margin: 0.5rem;
         box-sizing: border-box;
         background-color: var(--decent-color);
