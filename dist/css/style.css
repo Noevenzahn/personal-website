@@ -351,6 +351,57 @@ header nav ul a {
     margin: 1.2rem 0;
   }
 }
+.skillset {
+  display: grid;
+  place-items: center;
+}
+.skillset .skill-list {
+  display: flex;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.skillset .skill {
+  width: clamp(7rem, 17vw, 20rem);
+  height: clamp(7rem, 17vw, 20rem);
+  margin: 1.5vw 1.5vw;
+  box-sizing: border-box;
+  background-color: var(--decent-color);
+}
+
+.resume {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.date-info {
+  display: flex;
+  width: 100%;
+  max-width: 120rem;
+  padding: 2vw 7vw;
+  box-sizing: border-box;
+}
+.date-info .description {
+  width: 50%;
+  font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+  text-align: right;
+}
+.date-info .description p {
+  margin-top: 0.5rem;
+}
+.date-info .description p:first-of-type {
+  font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.date-info .title {
+  font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+  width: 50%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
 header {
   height: clamp(400px, 50vw, 1200px);
   width: 100%;

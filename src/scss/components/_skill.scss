@@ -1,0 +1,17 @@
+.skillset {
+        display: grid;
+        place-items: center;
+
+    .skill-list {
+        display: flex;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+    .skill {
+        width: clamp(7rem, 17vw, 20rem);
+        height: clamp(7rem, 17vw, 20rem);
+        margin: 1.5vw 1.5vw;
+        box-sizing: border-box;
+        background-color: var(--decent-color);
+    }
+}
