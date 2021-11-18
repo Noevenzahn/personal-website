@@ -1,8 +1,27 @@
+#about__header {
+    height: 100%;
+    width: 100%;
+    margin-bottom: calc(5vw + 1rem);
+    display: grid;
+    place-items: center;
+    
+    h1 {
+        margin: clamp(11rem, 10vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
+    }
+    .about__text {
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+}
 .resume {
     display: grid;
     place-items: center;
     width: 100%;
     margin: 6rem 0;
+    
+    h2 {
+        text-align: center;
+    }
 }
 .date-info {
     display: flex;

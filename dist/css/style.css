@@ -368,11 +368,29 @@ header nav ul a {
   background-color: var(--decent-color);
 }
 
+#about__header {
+  height: 100%;
+  width: 100%;
+  margin-bottom: calc(5vw + 1rem);
+  display: grid;
+  place-items: center;
+}
+#about__header h1 {
+  margin: clamp(11rem, 10vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
+}
+#about__header .about__text {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 .resume {
   display: grid;
   place-items: center;
   width: 100%;
   margin: 6rem 0;
+}
+.resume h2 {
+  text-align: center;
 }
 
 .date-info {
@@ -402,7 +420,7 @@ header nav ul a {
   font-weight: bold;
 }
 
-#portfolio-header {
+#portfolio__header {
   height: clamp(250px, 20vw, 500px);
   width: 100%;
   display: grid;
@@ -427,7 +445,7 @@ header nav ul a {
   background-color: var(--second-decent-color);
 }
 
-header {
+#home__header {
   height: clamp(400px, 50vw, 1200px);
   width: 100%;
   display: grid;
