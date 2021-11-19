@@ -16,10 +16,13 @@
         -webkit-text-fill-color: ;
         -webkit-text-stroke: 0px;
     }
-    nav button:hover {
+    button:hover, 
+    #contact button:hover,
+    .highlights ul a:hover {
         background-color: ;
     }
-    nav button {
+    button,
+    .highlights ul a {
         border-color: ;
         color: ;
     }    
@@ -74,12 +77,12 @@
 
     <footer>
     <section id="contact">
-        <form action="">
+        <form name="Kontaktformular" method="POST" data-netlify="true">
                 <h2>Want to work together?</h2>
             <section>
-                <p>Hey, my <label for="name">name</label> is <input id="name" type="text"></p> 
-                <p>my <label for="mail">e-mail</label> is<input id="mail" type="text"></p>
-                <p>and I want to get in touch about<textarea></textarea></p>
+                <p>Hey, my <label for="name">name</label> is <input id="name" type="text" name="Name"></p> 
+                <p>my <label for="mail">e-mail</label> is<input id="mail" type="email" name="Email"></p>
+                <p>and I want to get in touch about<textarea name="Nachricht"></textarea></p>
                 <button type="submit">send email</button>
             </section>
         </form>

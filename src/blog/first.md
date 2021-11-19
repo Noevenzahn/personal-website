@@ -1,4 +1,5 @@
 ---
+tags: ["post", "featured"]
 title: React PWA
 description: with local storage saving
 image: /assets/images/counter-header.png

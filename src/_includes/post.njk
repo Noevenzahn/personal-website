@@ -8,10 +8,13 @@ layout: "base.njk"
         -webkit-text-fill-color: {{ accentColor }};
         -webkit-text-stroke: 0px;
     }
-    nav button:hover {
+    button:hover, 
+    #contact button:hover,
+    .highlights ul a:hover {
         background-color: {{ accentColor }};
     }
-    nav button {
+    button,
+    .highlights ul a {
         border-color: {{ accentColor }};
         color: {{ accentColor }};
     }    

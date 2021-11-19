@@ -13,81 +13,24 @@ layout: "base.njk"
         <div class="banner">
             <a href="">my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • </a>
         </div>
-        <div class="project__preview marquee">
-            <p><a href="">
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-            </a></p>
-        </div>
-        <div class="project__preview marquee">
-            <p><a href="">
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-            </a></p>
-        </div>
-        <div class="project__preview marquee">
-            <p><a href="">
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-            </a></p>
-        </div>
-        <div class="project__preview marquee">
-            <p><a href="">
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-                coding history <span class="text__marking">iOS quiz app</span> • 
-            </a></p>
-        </div>
-        <div class="project__preview marquee">
-            <p><a href="">
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-                <span class="text__marking">React PWA</span> with <span class="text__marking">local storage</span> saving • 
-            </a></p>
-        </div>
-        <a class="page__link" href="">more of my work</a>
+        
+        {%- for post in collections.featured -%}
+            <div class="project__preview marquee">
+                <p><a href="{{ post.url }}">
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> • 
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                    <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
+                </a></p>
+            </div>
+        {%- endfor -%}
+        
+        <a class="page__link" href="/blog/">more of my work</a>
     </section>
     <section class="about__section">
         <div class="banner second">
@@ -98,6 +41,6 @@ layout: "base.njk"
             <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien.</p>
         </div>
 
-        <a class="page__link" href="">more about my skills</a>
+        <a class="page__link" href="/about/">more about my skills</a>
     </section>
 </main>
