@@ -20,7 +20,7 @@ layout: "base.njk"
         
         {%- for post in collections.post -%}
             <div class="project__preview marquee">
-                <p><a href="">
+                <p><a href="{{ post.url }}">
                     <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> • 
                     <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
                     <span class="text__marking">{{ post.data.title }}</span> {{ post.data.description }} <span class="text__marking">{{ post.data.secTitle }}</span> •
