@@ -19,10 +19,13 @@
     &:nth-child(even) {
         background-color: var(--decent-color);
         -webkit-text-fill-color: var(--decent-color);
+        color: var(--decent-color);
+
     }
     &:nth-child(odd) {
         background-color: var(--background);
         -webkit-text-fill-color: var(--background);
+        color: var(--background);
         border-top: 0.1rem solid var(--second-decent-color);
         border-bottom: 0.1rem solid var(--second-decent-color);
     }

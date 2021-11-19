@@ -1,0 +1,57 @@
+---
+layout: "base.njk"
+---
+
+<style>
+    h1 {
+        color: {{ accentColor }};
+        -webkit-text-fill-color: {{ accentColor }};
+        -webkit-text-stroke: 0px;
+    }
+    nav button:hover {
+        background-color: {{ accentColor }};
+    }
+    nav button {
+        border-color: {{ accentColor }};
+        color: {{ accentColor }};
+    }    
+    .post__content a {
+        color: {{ accentColor }};
+        text-decoration: underline;
+    }
+    .post__content strong {
+        color: {{ accentColor }};
+    }
+    .banner .text__marking {
+        color: {{ accentColor }};
+        -webkit-text-fill-color: {{ accentColor }};
+    }
+</style>
+<header id="post__header">
+
+    {% include "nav.njk" %}
+    
+    <h1>{{ title }} {{ description }} {{ secTitle }}</h1>
+
+    <section class="description">
+        <div>
+            <p>{{ teaserText }}</p>
+            <p>{{ date }}</p>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <img class="post__image" src="{{ image }}" alt="{{ imageAlt }}">
+    </section>
+    <div class="banner" style="background-color: {{ accentColor }}">
+        <a href="">my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • </a>
+    </div>
+</header>
+<main class="post__content">
+
+    {{ content | safe }}
+
+</main>

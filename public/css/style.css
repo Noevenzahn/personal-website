@@ -38,6 +38,10 @@ p {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+}
+
 .banner {
   background-color: var(--accent);
   padding: 1.5rem 0 1.3rem 0;
@@ -315,10 +319,12 @@ header nav ul a {
 .project__preview:nth-child(even) {
   background-color: var(--decent-color);
   -webkit-text-fill-color: var(--decent-color);
+  color: var(--decent-color);
 }
 .project__preview:nth-child(odd) {
   background-color: var(--background);
   -webkit-text-fill-color: var(--background);
+  color: var(--background);
   border-top: 0.1rem solid var(--second-decent-color);
   border-bottom: 0.1rem solid var(--second-decent-color);
 }
@@ -560,6 +566,27 @@ header nav ul a {
   place-items: center;
 }
 
+.description {
+  display: flex;
+}
+
+h1 {
+  margin: clamp(11rem, 10vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
+}
+
+.post__image {
+  width: 50vw;
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    flex-direction: column;
+  }
+
+  .post__image {
+    width: 100%;
+  }
+}
 .marquee {
   width: 100%;
   overflow: hidden;
