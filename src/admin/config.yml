@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "public/assets/images"
+public_folder: "/asset/images"
+collections: 
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
+      - { label: "secTitle", name: "secTitle", widget: "string" }
+      - { label: "image", name: "image", widget: "image" }
+      - { label: "image alt-text", name: "imageAlt", widget: "string" }
+      - { label: "body", name: "body", widget: "markdown" }
+      - { label: "tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: 'accent color', name: 'accentColor', widget: 'color', allowInput: true }
