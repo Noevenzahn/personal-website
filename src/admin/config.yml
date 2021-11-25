@@ -9,9 +9,9 @@ collections:
     folder: "src/blog"
     create: true
     fields:
-      - { label: "title", name: "title", widget: "string", required: "false" }
-      - { label: "description", name: "description", widget: "string", required: "false" }
-      - { label: "secTitle", name: "secTitle", widget: "string", required: "false" }
+      - { label: "title", name: "title", widget: "string", required: false }
+      - { label: "description", name: "description", widget: "string", required: false }
+      - { label: "secTitle", name: "secTitle", widget: "string", required: false }
       - { label: "image", name: "image", widget: "image" }
       - { label: "image alt-text", name: "imageAlt", widget: "string" }
       - { label: "body", name: "body", widget: "markdown" }
