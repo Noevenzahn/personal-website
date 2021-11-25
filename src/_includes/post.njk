@@ -8,7 +8,7 @@ layout: "base.njk"
         -webkit-text-fill-color: {{ accentColor }};
         -webkit-text-stroke: 0px;
     }
-    button:hover, 
+    nav button:hover, 
     #contact button:hover,
     .highlights ul a:hover {
         background-color: {{ accentColor }};
@@ -29,6 +29,9 @@ layout: "base.njk"
         color: {{ accentColor }};
         -webkit-text-fill-color: {{ accentColor }};
     }
+    #contact input:focus, #contact textarea:focus {
+        outline: solid 1px {{ accentColor }};
+    }
 </style>
 <header id="post__header">
 
@@ -36,16 +39,16 @@ layout: "base.njk"
     
     <h1>{{ title }} {{ description }} {{ secTitle }}</h1>
 
-    <section class="description">
+    <section class="description__section">
         <div>
-            <p>{{ teaserText }}</p>
+            <p class="teasertext">{{ teaserText }}</p>
             <p>{{ date }}</p>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class="technology__tags">
+            <div class="tag"></div>
+            <div class="tag"></div>
+            <div class="tag"></div>
+            <div class="tag"></div>
+        </div>
         </div>
         <img class="post__image" src="{{ image }}" alt="{{ imageAlt }}">
     </section>
@@ -53,8 +56,10 @@ layout: "base.njk"
         <a href="">my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • </a>
     </div>
 </header>
-<main class="post__content">
+<main class="post__main">
+    <div class="post__content">
 
     {{ content | safe }}
 
+    </div>
 </main>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve && sass --watch src/scss/style.scss:public/css/style.css",
+    "start": "eleventy --serve & sass --watch src/scss/style.scss:public/css/style.css",
     "sass": "sass --style=compressed src/scss/style.scss:public/css/style.css",
     "build": "npm run sass && eleventy"
   },
