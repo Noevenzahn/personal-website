@@ -7,11 +7,20 @@
 }
 .filter {
     display: flex;
-    justify-self: end;
+    margin-left: auto;
     align-self: end;
-    margin: 2vw 0;
+    padding: 2vw;
+    overflow-x: auto;
+    max-width: 100%;
+
+    scrollbar-width: none; 
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
 
     .technology {
+        flex-shrink: 0;
         width: clamp(7rem, 10vw, 15rem);
         height: clamp(7rem, 10vw, 15rem);
         margin: 0.5rem;
