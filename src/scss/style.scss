@@ -36,9 +36,9 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: var(--main-font);
     font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
     color: var(--normal-font);
     background-color: var(--background);
+    overflow-x: hidden;
 }

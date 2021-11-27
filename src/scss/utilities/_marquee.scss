@@ -4,9 +4,9 @@
     box-sizing: border-box;
     
     & p {
+        margin: 0;
         animation: marquee 45s linear infinite;
         animation-play-state: paused;
-        margin: 0;
     }
     &:hover p {
         animation-play-state: running;
@@ -25,9 +25,9 @@
         box-sizing: border-box;
         
         & p {
+            margin: 0;
             animation: marquee 60s linear infinite;
             animation-play-state: paused;
-            margin: 0;
         }
         &:hover p {
             animation-play-state: running;

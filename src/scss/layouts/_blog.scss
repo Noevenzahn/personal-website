@@ -1,18 +1,17 @@
 #portfolio__header {
-    height: clamp(20rem, 25vw, 38rem);
-    width: 100%;
-
     display: grid;
     place-items: center;
+    height: clamp(20rem, 25vw, 38rem);
+    width: 100%;
 }
 .filter {
-    display: flex;
-    margin-left: auto;
     align-self: end;
-    padding: 2vw;
-    overflow-x: auto;
+    display: flex;
     max-width: 100%;
+    margin-left: auto;
+    padding: 2vw;
 
+    overflow-x: auto;
     scrollbar-width: none; 
 
     &::-webkit-scrollbar {
@@ -24,8 +23,9 @@
         width: clamp(7rem, 10vw, 15rem);
         height: clamp(7rem, 10vw, 15rem);
         margin: 0.5rem;
-        box-sizing: border-box;
+        
         background-color: var(--decent-color);
+        box-sizing: border-box;
         transition: background-color 250ms;
 
         &:hover {

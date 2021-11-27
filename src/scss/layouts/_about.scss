@@ -1,9 +1,9 @@
 #about__header {
+    display: grid;
+    place-items: center;
     height: 100%;
     width: 100%;
     margin-bottom: calc(5vw + 1rem);
-    display: grid;
-    place-items: center;
     
     h1 {
         margin: clamp(11rem, 10vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
@@ -39,15 +39,16 @@
             margin-top: 0.5rem;
         }
         p:first-of-type {
+            margin-bottom: 0.5rem;
             font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
             font-weight: bold;
-            margin-bottom: 0.5rem;
         }
     }
     .title {
-        font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
         width: 50%;
         margin-top: 0.5rem;
+        
+        font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
         font-weight: bold;
     }
 }
