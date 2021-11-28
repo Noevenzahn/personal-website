@@ -1,5 +1,6 @@
 .project__preview {   
-    padding: 2rem 0 1.75rem 0;
+    // padding: 2rem 0 1.75rem 0;
+    padding: clamp(2rem, 1vw + 1rem, 5rem) 0 clamp(1.75rem, 0.75vw + 1rem, 4.75rem) 0;
     overflow: hidden;
      
     a {
