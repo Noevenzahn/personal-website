@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve & sass --watch src/scss/style.scss:public/css/style.css",
-    "sass": "sass src/scss/style.scss:public/css/style.css && postcss public/css/style.css --replace --use autoprefixer",
+    "sass": "sass --style=compressed src/scss/style.scss:public/css/style.css && postcss public/css/style.css --replace --use autoprefixer",
     "build": "npm run sass && eleventy"
   },
   "browserslist": [
