@@ -14,3 +14,19 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Lexend';
+    src: url('../assets/fonts/Lexend-ExtraLight.woff2') format('woff2'),
+         url('../assets/fonts/Lexend-ExtraLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lexend';
+    src: url('../assets/fonts/Lexend-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Lexend-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
