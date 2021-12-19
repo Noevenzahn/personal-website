@@ -183,3 +183,18 @@ Footer {
         border-top: solid 1.5px var(--normal-font);
     }
 }
+
+@media screen and (min-width: 1150px) {
+    #contact {
+        padding: 7rem 3rem;
+        grid-area: contact;
+        background-color: var(--decent-color);
+        display: grid;
+    
+        form {
+            display: flex;
+            max-width: 100%;
+            justify-self: normal;
+        }
+    }
+}
