@@ -7,12 +7,12 @@ Footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     margin-top: calc(5vw + 2rem);
-    border-top: 1rem solid var(--normal-font);
+    border-top: 1rem solid var(--color-gray-100);
 }
 #contact {
     padding: 7rem 3rem;
     grid-area: contact;
-    background-color: var(--decent-color);
+    background-color: var(--color-gray-400);
     display: grid;
 
     form {
@@ -32,15 +32,15 @@ Footer {
         padding: 1rem 0 1.2rem 0;
         margin-right: 1.5rem;
         border: none;
-        border-bottom: solid 1.5px var(--normal-font);
+        border-bottom: solid 1.5px var(--color-gray-100);
 
         font-family: var(--main-font);
         font-weight: 300;
         font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
-        color: var(--normal-font);
+        color: var(--color-gray-100);
 
         cursor: pointer;
-        background-color: var(--decent-color);
+        background-color: var(--color-gray-400);
 
         &:focus {
             outline: solid 1px var(--accent);
@@ -50,7 +50,7 @@ Footer {
         resize: vertical;
     }
     button {
-        background-color: var(--decent-color);
+        background-color: var(--color-gray-400);
 
         &:hover {
             color: var(--background);
@@ -61,7 +61,7 @@ Footer {
 .highlights {
     grid-area: highlights;
     padding: 3rem;
-    border-left: solid 1.5px var(--normal-font);
+    border-left: solid 1.5px var(--color-gray-100);
     display: grid;
     
     nav {
@@ -103,14 +103,14 @@ Footer {
 .button__group {
     grid-area: buttons;
     display: flex;
-    border-top: solid 1.5px var(--normal-font);
+    border-top: solid 1.5px var(--color-gray-100);
 
     a {
         display: flex;
         align-items: center;
         position: relative;
         flex: 1;
-        border-right: solid 1.5px var(--normal-font);
+        border-right: solid 1.5px var(--color-gray-100);
         box-sizing: border-box;
         
         &:last-of-type {
@@ -125,7 +125,7 @@ Footer {
         font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
         font-weight: normal;
         text-align: left;
-        color: var(--normal-font);
+        color: var(--color-gray-100);
 
         background-color: var(--background);
         cursor: pointer;
@@ -141,7 +141,7 @@ Footer {
 }
 .credits {
     grid-area: credits;
-    background: var(--normal-font);
+    background: var(--color-gray-100);
     color: var(--background);
 
     p {
@@ -161,7 +161,7 @@ Footer {
         flex-wrap: wrap;
         
         a {
-            border-bottom: solid 1.5px var(--normal-font);
+            border-bottom: solid 1.5px var(--color-gray-100);
             
             &:nth-child(2) {
                 border-right: none;
@@ -180,7 +180,7 @@ Footer {
     }
     .highlights {
         border-left: none;
-        border-top: solid 1.5px var(--normal-font);
+        border-top: solid 1.5px var(--color-gray-100);
     }
 }
 
@@ -188,7 +188,7 @@ Footer {
     #contact {
         padding: 7rem 3rem;
         grid-area: contact;
-        background-color: var(--decent-color);
+        background-color: var(--color-gray-400);
         display: grid;
     
         form {

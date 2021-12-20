@@ -7,7 +7,7 @@
 
     font-size: clamp(2rem, 1vw + 1rem, 3rem);
     font-weight: 500;
-    color: var(--second-decent-color);
+    color: var(--color-gray-200);
     text-align: center;
     text-decoration: none;
     
@@ -18,8 +18,8 @@
         height: 1rem;
         margin: 0.25rem 0 0 1rem;
         
-        border-top: 0.4rem solid var(--second-decent-color);
-        border-right: 0.4rem solid var(--second-decent-color);
+        border-top: 0.4rem solid var(--color-gray-200);
+        border-right: 0.4rem solid var(--color-gray-200);
         transform: rotate(45deg);
     }
 }

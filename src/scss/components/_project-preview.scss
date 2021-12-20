@@ -10,17 +10,17 @@
         color: var(--main-font);
         text-decoration: none;
         white-space: nowrap;
-        -webkit-text-stroke: clamp(0.1rem, 0.08vw, 0.1rem) var(--decent-font);
+        -webkit-text-stroke: clamp(0.1rem, 0.08vw, 0.1rem) var(--color-gray-300);
     }
     .text__marking {
-        color: var(--normal-font);
-        -webkit-text-fill-color: var(--normal-font);
+        color: var(--color-gray-100);
+        -webkit-text-fill-color: var(--color-gray-100);
         -webkit-text-stroke: 0;
     }
     &:nth-child(even) {
-        background-color: var(--decent-color);
-        -webkit-text-fill-color: var(--decent-color);
-        color: var(--decent-color);
+        background-color: var(--color-gray-400);
+        -webkit-text-fill-color: var(--color-gray-400);
+        color: var(--color-gray-400);
 
     }
     &:nth-child(odd) {
@@ -28,8 +28,8 @@
         -webkit-text-fill-color: var(--background);
         color: var(--background);
         
-        border-top: 0.1rem solid var(--second-decent-color);
-        border-bottom: 0.1rem solid var(--second-decent-color);
+        border-top: 0.1rem solid var(--color-gray-200);
+        border-bottom: 0.1rem solid var(--color-gray-200);
     }
 }
 $degs: ("3": 1.4deg, "5": -1.8deg, "7": 1.4deg, "9": -1.8deg, "11": 1.4deg, "13": -1.8deg, "15": 1.4deg, "17": -1.8deg); 

@@ -4,9 +4,9 @@ h1 {
     font-family: var(--heading-font);
     font-weight: 800;
     font-size: clamp(3.9rem, 5vw + 1rem, 9.5rem);
-    color: var(--normal-font);
+    color: var(--color-gray-100);
     -webkit-text-fill-color: var(--background);
-    -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--normal-font);
+    -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--color-gray-100);
 
     .text__marking {
         color: var(--accent);

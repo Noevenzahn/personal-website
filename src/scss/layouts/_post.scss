@@ -38,11 +38,11 @@
         margin-right: 1rem;
 
         box-sizing: border-box;
-        background-color: var(--decent-color);
+        background-color: var(--color-gray-400);
         transition: background-color 250ms;
 
         &:hover {
-            background-color: var(--second-decent-color);
+            background-color: var(--color-gray-200);
         }
     }
 }

@@ -24,12 +24,12 @@
         height: clamp(7rem, 10vw, 15rem);
         margin: 0.5rem;
         
-        background-color: var(--decent-color);
+        background-color: var(--color-gray-400);
         box-sizing: border-box;
         transition: background-color 250ms;
 
         &:hover {
-            background-color: var(--second-decent-color);
+            background-color: var(--color-gray-200);
         }
     }
 }
