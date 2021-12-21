@@ -29,7 +29,7 @@ Footer {
     }
     input, textarea {
         width: 100%;
-        padding: 1rem 0 1.2rem 0;
+        padding: 1rem 1rem 1.2rem 1rem;
         margin-right: 1.5rem;
         border: none;
         border-bottom: solid 1.5px var(--color-gray-100);
@@ -40,6 +40,7 @@ Footer {
         color: var(--color-gray-100);
 
         cursor: pointer;
+        box-sizing: border-box;
         background-color: var(--color-gray-400);
 
         &:focus {
@@ -162,10 +163,14 @@ Footer {
         
         a {
             border-bottom: solid 1.5px var(--color-gray-100);
+            transition: background-color 250ms ease;
             
             &:nth-child(2) {
                 border-right: none;
             }
+        }
+        a:hover, a:hover button {
+            background-color: var(--color-gray-400);
         }
     }
     .button__group > a {

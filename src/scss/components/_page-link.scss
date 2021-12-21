@@ -21,5 +21,14 @@
         border-top: 0.4rem solid var(--color-gray-200);
         border-right: 0.4rem solid var(--color-gray-200);
         transform: rotate(45deg);
+        transition: margin-right 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+    }
+    &:hover {
+        color: var(--accent);
+
+        &::after {
+            margin-right: -2rem;
+            border-color:  var(--accent);
+        }
     }
 }

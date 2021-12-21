@@ -16,6 +16,11 @@ header nav {
         a {
             color: var(--color-gray-100);
             text-decoration: none;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: var(--color-gray-200);
+            }
         }
     }
     ul {
@@ -25,14 +30,19 @@ header nav {
         align-items: center;
         padding: 0 4vw 0 0;
         list-style: none;
-
+        
         a {
             font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
             font-weight: 300;
             color: var(--color-gray-100);
-
+            
             margin-left: clamp(1.5rem, 3vw, 6rem);
             text-decoration: none;
+            transition: border-color 200ms ease-in-out;
+            border-bottom: solid 1px var(--background);
+        }
+        .nav__link:hover {
+            border-color: var(--color-gray-100);
         }
     }
 }
