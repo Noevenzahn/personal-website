@@ -39,11 +39,18 @@ header nav {
             margin-left: clamp(1.5rem, 3vw, 6rem);
             text-decoration: none;
             transition: border-color 200ms ease-in-out;
-            border-bottom: solid 1px var(--background);
+            border-bottom: solid 1px rgba($color: #000000, $alpha: 0);
         }
         .nav__link:hover {
             border-color: var(--color-gray-100);
         }
+    }
+    .menu__icon {
+        cursor: pointer;
+        display: none;
+    }
+    #mobile__menu {
+        display: none;
     }
 }
 
@@ -61,4 +68,33 @@ header nav {
     width: auto;
     height: auto; 
     padding-left: 4vw;
+}
+
+@media screen and (max-width: 500px) {
+    .main__navigation {
+        display: none;
+    }
+    header nav .menu__icon {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+    }
+    #mobile__menu:checked + .main__navigation {
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        display: block;
+        padding: 0 2rem 0 1rem;
+        background-color: var(--color-gray-400);
+        
+        li {
+            margin: 2.5rem 1.5rem 0 0;
+            text-align: right;
+        }
+    }
+    button {
+        margin-bottom: 2.5rem;
+        background-color: var(--color-gray-400);
+    }
 }
