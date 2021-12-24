@@ -97,5 +97,10 @@ header nav {
     .main__navigation button {
         margin-bottom: 2.5rem;
         background-color: var(--color-gray-400);
+        
+        &:hover {
+            color: var(--background);
+            background-color: var(--accent) !important;
+        }
     }
 }
