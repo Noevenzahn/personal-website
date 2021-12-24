@@ -3,6 +3,7 @@
     place-items: center;
     height: clamp(20rem, 25vw, 38rem);
     width: 100%;
+    overflow: hidden;
 }
 .filter {
     align-self: end;

@@ -77,7 +77,7 @@ header nav {
     header nav .menu__icon {
         position: absolute;
         top: 2rem;
-        right: 2rem;
+        right: calc(4vw - 1rem);
         display: block;
     }
     #mobile__menu:checked + .main__navigation {
@@ -93,7 +93,7 @@ header nav {
             text-align: right;
         }
     }
-    button {
+    .main__navigation button {
         margin-bottom: 2.5rem;
         background-color: var(--color-gray-400);
     }
