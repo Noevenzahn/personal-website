@@ -3,34 +3,8 @@ layout: "base.njk"
 ---
 
 <style>
-    h1 {
-        color: {{ accentColor }};
-        -webkit-text-fill-color: {{ accentColor }};
-        -webkit-text-stroke: 0px;
-    }
-    nav button:hover, 
-    #contact button:hover,
-    .highlights ul a:hover {
-        background-color: {{ accentColor }};
-    }
-    button,
-    .highlights ul a {
-        border-color: {{ accentColor }};
-        color: {{ accentColor }};
-    }    
-    .post__content a {
-        color: {{ accentColor }};
-        text-decoration: underline;
-    }
-    .post__content strong {
-        color: {{ accentColor }};
-    }
-    .banner .text__marking {
-        color: {{ accentColor }};
-        -webkit-text-fill-color: {{ accentColor }};
-    }
-    #contact input:focus, #contact textarea:focus {
-        outline: solid 1px {{ accentColor }};
+    :root {
+    --accent: {{ accentColor }};
     }
 </style>
 <header id="post__header">
@@ -52,7 +26,7 @@ layout: "base.njk"
         </div>
         <img class="post__image" src="{{ image }}" alt="{{ imageAlt }}">
     </section>
-    <div class="banner" style="background-color: {{ accentColor }}">
+    <div class="banner">
         <a href="">my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • </a>
     </div>
 </header>
