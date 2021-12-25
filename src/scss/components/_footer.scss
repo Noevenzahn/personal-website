@@ -114,10 +114,14 @@ Footer {
         flex: 1;
         border-right: solid 1.5px var(--color-gray-100);
         box-sizing: border-box;
+        transition: background-color 250ms ease;
         
         &:last-of-type {
             border-right: none;
         }
+    }
+    a:hover, a:hover button {
+        background-color: var(--color-gray-400);
     }
     button {
         padding: 1rem 0 1.2rem 2rem;
@@ -164,14 +168,10 @@ Footer {
         
         a {
             border-bottom: solid 1.5px var(--color-gray-100);
-            transition: background-color 250ms ease;
             
             &:nth-child(2) {
                 border-right: none;
             }
-        }
-        a:hover, a:hover button {
-            background-color: var(--color-gray-400);
         }
     }
     .button__group > a {

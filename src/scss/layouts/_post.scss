@@ -64,6 +64,10 @@
 }
 .post__image {
     width: clamp(20rem, 45vw, 850rem);
+    height: 100%;
+}
+.banner {
+    margin-top: -2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -71,7 +75,7 @@
         flex-direction: column;
     }
     .post__image {
-        width: 100%;
+        width: 100vw;
         margin-top: 2rem;
     }
     .banner {
