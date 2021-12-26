@@ -10,7 +10,7 @@ Footer {
     border-top: 1rem solid var(--color-gray-100);
 }
 #contact {
-    padding: 7rem 3rem;
+    padding: clamp(4rem, 5vw, 7rem) clamp(2rem, 2vw + 1rem, 4rem);
     grid-area: contact;
     background-color: var(--color-gray-400);
     display: grid;
@@ -62,7 +62,7 @@ Footer {
 }
 .highlights {
     grid-area: highlights;
-    padding: 3rem;
+    padding: clamp(3rem, 3vw + 1rem, 5.5rem) clamp(2rem, 2vw + 1rem, 4rem);
     border-left: solid 1.5px var(--color-gray-100);
     display: grid;
     
@@ -124,11 +124,11 @@ Footer {
         background-color: var(--color-gray-400);
     }
     button {
-        padding: 1rem 0 1.2rem 2rem;
+        padding: 1rem 0 1.2rem clamp(2rem, 2vw + 1rem, 4rem);
         border: none;
 
         font-family: var(--main-font);
-        font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+        font-size: clamp(1.4rem, 1vw + 1rem, 2.2rem);
         font-weight: normal;
         text-align: left;
         color: var(--color-gray-100);
@@ -139,7 +139,7 @@ Footer {
     img {
         position: absolute;
         right: 2rem;
-        width: clamp(2.5rem, 1vw + 1rem, 3.5rem);
+        width: clamp(2.2rem, 1.5vw + 1rem, 3.5rem);
     }
     .intern {
         transform: rotate(45deg);

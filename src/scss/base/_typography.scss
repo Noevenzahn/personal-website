@@ -3,7 +3,7 @@ h1 {
     
     font-family: var(--heading-font);
     font-weight: 800;
-    font-size: clamp(3.9rem, 5vw + 1rem, 9.5rem);
+    font-size: clamp(3.2rem, 5vw + 1rem, 9.5rem);
     color: var(--color-gray-100);
     -webkit-text-fill-color: var(--background);
     -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--color-gray-100);
@@ -21,8 +21,12 @@ h2 {
 }
 p {
     font-weight: 300;
-    line-height: 160%;
+    line-height: 170%;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 a {
     text-decoration: none;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }

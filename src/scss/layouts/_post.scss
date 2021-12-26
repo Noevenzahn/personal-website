@@ -7,7 +7,7 @@
         max-width: 110rem;
     }
     p {
-        margin: 0 4.5vw;
+        margin: 0 clamp(1.5rem, 2vw, 4rem);
     }
     .post__content a {
         color: var(--accent);
@@ -22,9 +22,9 @@
         color: var(--accent);
     }
     img {
-        width: 100vw;
+        width: 100%;
         max-width: 110rem;
-        margin: clamp(2rem, 5vw, 5rem) -4.5vw;
+        margin: clamp(2rem, 5vw, 5rem) 0;
     }
 }
 .post__h1 {

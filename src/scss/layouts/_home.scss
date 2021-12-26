@@ -10,7 +10,7 @@
 }
 .about__section p {
     max-width: 80rem;
-    margin: 0 3rem;
+    margin: 0 clamp(1rem, 2vw, 4rem) 0 clamp(2rem, 2vw + 1rem, 4rem);
 }
 .about__preview {
     display: grid;
