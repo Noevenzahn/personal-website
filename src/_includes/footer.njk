@@ -3,9 +3,14 @@
         <form name="Kontaktformular" method="POST" data-netlify="true" autocomplete="on">
                 <h2>Want to work together?</h2>
             <section>
-                <p>Hey, my <label for="name">name</label> is <input id="name" type="text" name="Name"></p> 
-                <p>my <label for="mail">e-mail</label> is<input id="mail" type="email" name="Email"></p>
-                <p>and I want to <label for="message">get in touch about</label><textarea id="message" name="Nachricht"></textarea></p>
+                <p>Hey, my <label for="name">name</label> is <input id="name" type="text" name="Name" required></p> 
+                <p>my <label for="mail">e-mail</label> is<input id="mail" type="email" name="Email" required></p>
+                <p>and I want to <label for="message">get in touch about</label><textarea id="message" name="Nachricht" required></textarea></p>
+                <label class="checkbox__container" for="privacyPolicy">
+                    <input type="checkbox" name="privacy" id="privacyPolicy" required> 
+                    <span class="checkmark"></span>
+                    I agree to the&nbsp; <a href="/privacy/">privacy policy</a>.
+                </label>
                 <button type="submit">send email</button>
             </section>
         </form>
@@ -27,8 +32,8 @@
     <section class="button__group">
         <a href=""><button type="button">Dribbble</button><img src="/assets/graphics/arrow.svg" alt=""></a>
         <a href=""><button type="button">GitHub</button><img src="/assets/graphics/arrow.svg" alt=""></a>
-        <a href=""><button type="button">Datenschutz</button><img class="intern" src="/assets/graphics/arrow.svg" alt=""></a>
-        <a href=""><button type="button">Impress</button><img class="intern" src="/assets/graphics/arrow.svg" alt=""></a>
+        <a href=""><button type="button">Privacy Policy</button><img class="intern" src="/assets/graphics/arrow.svg" alt=""></a>
+        <a href=""><button type="button">Legal Notice</button><img class="intern" src="/assets/graphics/arrow.svg" alt=""></a>
     </section>
     <section class="credits">
         <p>Melvin Waberski  //  2021</p>
