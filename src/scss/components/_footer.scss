@@ -37,7 +37,7 @@ Footer {
 
         font-family: var(--main-font);
         font-weight: 300;
-        font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+        font-size: var(--font-size-400);
         color: var(--color-gray-100);
 
         cursor: pointer;
@@ -142,7 +142,7 @@ Footer {
             display: inline;
         }
         a {
-            font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+            font-size: var(--font-size-400);
             font-weight: 300;
             color: var(--accent);
             text-decoration: none;
@@ -189,7 +189,7 @@ Footer {
         border: none;
 
         font-family: var(--main-font);
-        font-size: clamp(1.4rem, 1vw + 1rem, 2.2rem);
+        font-size: var(--font-size-200);
         font-weight: normal;
         text-align: left;
         color: var(--color-gray-100);
@@ -215,7 +215,7 @@ Footer {
         margin: 0.5rem 0;
         
         text-align: center;
-        font-size: clamp(0.4rem, 0.5vw + 1rem, 1.6rem);
+        font-size: var(--font-size-100);
         font-weight: 500;
     }
 }

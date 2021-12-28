@@ -31,7 +31,7 @@
 
     .description {
         width: 50%;
-        font-size: clamp(1.8rem, 1vw + 1rem, 2.2rem);
+        font-size: var(--font-size-400);
         text-align: right;
 
         p {
@@ -39,7 +39,7 @@
         }
         p:first-of-type {
             margin-bottom: 0.5rem;
-            font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+            font-size: var(--font-size-600);
             font-weight: bold;
         }
     }
@@ -47,7 +47,7 @@
         width: 50%;
         margin-top: 0.5rem;
         
-        font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+        font-size: var(--font-size-600);
         font-weight: bold;
     }
 }

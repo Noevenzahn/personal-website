@@ -5,7 +5,7 @@
      
     a {
         font-family: var(--heading-font);
-        font-size: clamp(2.7rem, 2vw + 1rem, 5rem);
+        font-size: var(--font-size-700);
         font-weight: bold;
         color: var(--main-font);
         text-decoration: none;

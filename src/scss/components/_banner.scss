@@ -9,7 +9,7 @@
     a {
         font-family: var(--heading-font);
         font-weight: bold;
-        font-size: clamp(2.4rem, 2vw + 1rem, 3.5rem);
+        font-size: var(--font-size-600);
         color: var(--background);
         text-decoration: none;
         white-space: nowrap;

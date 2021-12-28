@@ -3,7 +3,7 @@ h1 {
     
     font-family: var(--heading-font);
     font-weight: 800;
-    font-size: clamp(3.2rem, 5vw + 1rem, 9.5rem);
+    font-size: var(--font-size-900);
     color: var(--color-gray-100);
     -webkit-text-fill-color: var(--background);
     -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--color-gray-100);
@@ -17,7 +17,7 @@ h1 {
 h2 {
     font-family: var(--heading-font);
     font-weight: 800;
-    font-size: clamp(3.5rem, 2.5vw + 1rem, 6rem);
+    font-size: var(--font-size-800);
 }
 p {
     font-weight: 300;
