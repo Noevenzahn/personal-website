@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{{ title }} {{ description }} {{ secTitle }}</title>
+        <meta name="title" content="{{ title }} {{ description }} {{ secTitle }}">
+        <meta name="description" content="{{ teaserText }}">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.melvinwaberski.com{{ page.url }}">
+        <meta property="og:title" content="{{ title }} {{ description }} {{ secTitle }}">
+        <meta property="og:description" content="{{ teaserText }}">
+        <meta property="og:image" content="{{ image }}">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://www.melvinwaberski.com{{ page.url }}">
+        <meta property="twitter:title" content="{{ title }} {{ description }} {{ secTitle }}">
+        <meta property="twitter:description" content="{{ teaserText }}">
+        <meta property="twitter:image" content="{{ image }}">
+
+        <link rel="stylesheet" href="/css/style.css">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </head>
+    <body>
+        {{ content | safe }}
+        
+        {% include "footer.njk" %}
+
+
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
