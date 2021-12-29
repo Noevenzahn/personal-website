@@ -4,9 +4,9 @@ backend:
 media_folder: "public/assets/images"
 public_folder: "/asset/images"
 collections: 
-  - name: "blog"
-    label: "Blog"
-    folder: "src/blog"
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/portfolio"
     create: true
     fields:
       - { label: "title", name: "title", widget: "string", required: false }
