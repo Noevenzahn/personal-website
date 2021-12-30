@@ -1,22 +1,23 @@
 ---
 title: React PWA
-description: with local storage saving
-teaserText: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
-image: /assets/images/counter-header.png
+description: to keep an eye on the crypto market
+teaserText: >-
+  Utilizing the CoinGecko API, React, local storage, and a service worker, I've
+  made a mobile-focused PWA.
+
+  It was the first project with API calls depending and changing on user input that I created.
+image: /asset/images/crypt-header.jpg
 imageAlt: application to count or generate random numbers
 tags:
   - post
   - featured
 accentColor: "#66D7D7"
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+This React application fetches cryptocurrency prices from the [CoinGecko API](https://www.coingecko.com/), depending on the user input.
+The user can save specific cryptocurrencies and keep track of their prices in his preferred Fiat currency. Because the state is saved in the local storage, the list stays there even on reload of the page.
+A service worker with the bare minimum is included, so the application can be installed as a PWA on mobile devices. It's designed for mobile and if you want to get rid of a list item just double tap on it, and it will disappear.
 
-![qdfewgrehtjtz](https://images.unsplash.com/photo-1637779692999-26cdadc69c1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+It was my first project with API calls depending and changing on user input that I've created.
+I learned a lot about data fetching, used local storage the first time, and discovered the possibility of creating PWAs.
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse **molestie consequat**, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
-
-Ut wisi enim ad minim veniam, quis nostrud [exerci tation](https://www.wikipedia.de/) ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
-
-![dsafgfhj](https://images.unsplash.com/photo-1637780276724-e20009e9f5ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)
-
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+Feel free to check out the [live demo](https://crypt.netlify.app/) and the [source code](https://github.com/Noevenzahn/crypt)!
