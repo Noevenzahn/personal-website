@@ -1,33 +1,65 @@
-html,
-body {
-  color: #666;
+@font-face {
+  font-family: 'Trap';
+  src: url('../assets/fonts/Trap-ExtraBold.woff2') format('woff2'),
+       url('../assets/fonts/Trap-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trap';
+  src: url('../assets/fonts/Trap-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Trap-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('../assets/fonts/Lexend-ExtraLight.woff2') format('woff2'),
+       url('../assets/fonts/Lexend-ExtraLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('../assets/fonts/Lexend-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Lexend-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --accent: #FFB700;   
+  --background: #000000;
+  color: #ffffff;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Lexend, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   display: flex;
   justify-content: center;
+  background-color: var(--background);   
 }
-
 body {
   padding: 1rem;
   max-width: 780px;
+  line-height: 170%;
 }
-
 h1 {
-  color: #333;
+  font-family: Trap;
+  font-weight: 800;
   font-size: 2.7rem;
   margin: 3rem 0 2rem 0;
+  color: var(--accent);
 }
-
-p {
-  color: #333;
+div, p {
   font-size: 1.05rem;
-  line-height: 1.85rem;
+  font-weight: 300;
 }
-strong {
-    color: #666;
+strong, a {
+  color: var(--accent);
 }
-
 img {
   width: 100%;
-    margin: 10px 0;
+  margin: 20px 0;
 }
