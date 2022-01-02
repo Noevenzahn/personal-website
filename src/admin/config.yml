@@ -9,10 +9,10 @@ collections:
     folder: "src/portfolio"
     create: true
     fields:
-      - { label: "cms-title", name: "CMS title", widget: "string" }
-      - { label: "title", name: "title", widget: "string", required: false }
-      - { label: "description", name: "description", widget: "string", required: false }
-      - { label: "second title", name: "secTitle", widget: "string", required: false }
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "title-beginning", name: "title-beginning", widget: "string", required: false }
+      - { label: "title-middle", name: "title-middle", widget: "string", required: false }
+      - { label: "title-end", name: "title-end", widget: "string", required: false }
       - { label: "teaser text", name: "teaserText", widget: "text" }
       - { label: "image", name: "image", widget: "image" }
       - { label: "image alt-text", name: "imageAlt", widget: "string" }
