@@ -10,9 +10,9 @@ collections:
     create: true
     fields:
       - { label: "title", name: "title", widget: "string" }
-      - { label: "title-beginning", name: "title-beginning", widget: "string", required: false }
-      - { label: "title-middle", name: "title-middle", widget: "string", required: false }
-      - { label: "title-end", name: "title-end", widget: "string", required: false }
+      - { label: "title beginning", name: "titleBeginning", widget: "string", required: false }
+      - { label: "title middle", name: "titleMiddle", widget: "string", required: false }
+      - { label: "title end", name: "titleEnd", widget: "string", required: false }
       - { label: "teaser text", name: "teaserText", widget: "text" }
       - { label: "image", name: "image", widget: "image" }
       - { label: "image alt-text", name: "imageAlt", widget: "string" }
