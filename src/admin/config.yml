@@ -9,6 +9,7 @@ collections:
     folder: "src/portfolio"
     create: true
     fields:
+      - { label: "cms-title", name: "CMS title", widget: "string" }
       - { label: "title", name: "title", widget: "string", required: false }
       - { label: "description", name: "description", widget: "string", required: false }
       - { label: "second title", name: "secTitle", widget: "string", required: false }
