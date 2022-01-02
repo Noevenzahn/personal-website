@@ -11,7 +11,9 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
       CMS.registerPreviewStyle("/admin/cms.css"); 
+    </script>
 
+    <script defer>
       const iframe = document.getElementById("preview-pane");
       const r = iframe.contentWindow.document.querySelector(':root');
       const accentColor = document.querySelectorAll('*[id^="accentColor"]')[0];
