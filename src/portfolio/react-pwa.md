@@ -1,7 +1,7 @@
 ---
-title: React PWA to keep an eye on the crypto market
+title: React PWA to Keep an Eye on the Crypto Market
 titleBeginning: React PWA
-titleMiddle: to keep an eye on the crypto market
+titleMiddle: to Keep an Eye on the Crypto Market
 image: /assets/images/crypt-pwa-header.jpg
 imageAlt: application for exchange rates of crypto currencies
 tags:
