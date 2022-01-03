@@ -10,6 +10,7 @@ image: /assets/images/two-projects-header.jpg
 imageAlt: preview of two applications
 tags:
   - post
+  - featured
 accentColor: "#70e3e1"
 ---
 ## The Advice Machine
