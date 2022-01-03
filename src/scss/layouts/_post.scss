@@ -1,13 +1,17 @@
 .post__main {
     display: grid;
     place-items: center;
+    margin: 0 clamp(1.5rem,2vw,4rem);
 
     .post__content {
         width: 100%;
         max-width: 110rem;
     }
-    p {
-        margin: 0 clamp(1.5rem, 2vw, 4rem);
+    h2, h3, h4, h5, h6 {
+        color: var(--accent);
+    }
+    h2 {
+        margin: clamp(3.5rem, 5vw, 6.5rem) 0 clamp(1rem, 3vw, 3rem) 0;
     }
     .post__content a {
         color: var(--accent);
@@ -24,7 +28,7 @@
     img {
         width: 100%;
         max-width: 110rem;
-        margin: clamp(2rem, 5vw, 5rem) 0;
+        margin: clamp(2rem, 3vw, 4rem) 0;
     }
 }
 .post__h1 {
