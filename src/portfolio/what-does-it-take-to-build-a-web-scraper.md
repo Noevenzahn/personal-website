@@ -9,12 +9,12 @@ image: /assets/images/web-scraper-header.png
 imageAlt: the first lines of code
 tags:
   - post
-accentColor: "#fdc21c"
+accentColor: "#ffc146"
 ---
 All we need is Express.js for a node.js server, the cheerio package to pick out HTML elements on a website, and Axios for our requests.
 
 Fetch the HTML of a website, load it in with cheerio, and give it a class that the elements have you're looking for. Now you can define a function and execute it on each element with that class. I took the text and link from each element and stored it in an array. That's it! Now console.log your results! 
 
-![overview of the code](/assets/images/web-scraper-code.svg)
+![overview of the code](/assets/images/web-scraper-code.png)
 
 If you want, you can go even further. Create routes and pass your data to the frontend! Here's [my repository](https://github.com/Noevenzahn/web-scraper) with the code I ended up with.
