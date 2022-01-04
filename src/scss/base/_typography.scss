@@ -5,7 +5,7 @@ h1 {
     font-weight: 800;
     font-size: var(--font-size-900);
     color: var(--color-gray-100);
-    -webkit-text-fill-color: var(--background);
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: clamp(0.075rem, 0.1vw, 0.1rem) var(--color-gray-100);
 
     .text__marking {
@@ -29,4 +29,10 @@ a {
     text-decoration: none;
     overflow-wrap: break-word;
     hyphens: auto;
+}
+::selection {
+    padding: 1rem;
+    background-color: var(--accent);
+    color: var(--color-gray-100);
+    -webkit-text-fill-color: var(--color-gray-100);
 }
