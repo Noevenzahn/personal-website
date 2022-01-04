@@ -13,6 +13,7 @@
 @use "layouts/blog";
 @use "layouts/home";
 @use "layouts/post";
+@use "layouts/not_found";
 
 @use "utilities/marquee";
 
@@ -23,6 +24,8 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
+    --max-content-width: 100rem;
 
     --accent: #FFB700;
     --background: #000000;

@@ -265,3 +265,13 @@ Footer {
         }
     }
 }
+@media screen and (max-width: 400px) {
+    .button__group {
+        img {
+            right: 1rem;
+        }
+        button {
+            padding-left: 1.25rem;
+        }
+    }
+}

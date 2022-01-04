@@ -5,7 +5,7 @@
 
     .post__content {
         width: 100%;
-        max-width: 110rem;
+        max-width: var(--max-content-width); 
     }
     h2, h3, h4, h5, h6 {
         color: var(--accent);
@@ -27,7 +27,7 @@
     }
     img {
         width: 100%;
-        max-width: 110rem;
+        max-width: var(--max-content-width); 
         margin: clamp(2rem, 3vw, 4rem) 0;
     }
 }
