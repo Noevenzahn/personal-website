@@ -6,13 +6,19 @@ layout: "base.njk"
 
     {% include "nav.njk" %}
 
+    <style>
+        .filter .sass {
+            background-color: var(--color-gray-300) !important;
+        }
+    </style>
+
     {% include "filter.njk" %}
 
 </header>
 <main id="content">
     <section class="preview__section">
         
-        {%- for post in collections.post -%}
+        {%- for post in collections.sass -%}
             <div class="project__preview marquee">
                 <p><a href="{{ post.url }}">
                     <span class="text__marking">{{ post.data.titleBeginning }}</span> {{ post.data.titleMiddle }} <span class="text__marking">{{ post.data.titleEnd }}</span> • 

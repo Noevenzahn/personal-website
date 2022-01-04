@@ -17,20 +17,24 @@
 
     &::-webkit-scrollbar {
         display: none;
-      }
+    }
 
     .technology {
         flex-shrink: 0;
-        width: clamp(7rem, 10vw, 15rem);
-        height: clamp(7rem, 10vw, 15rem);
+        width: clamp(7rem, 7vw, 13rem);
+        height: clamp(7rem, 7vw, 13rem);
         margin: 0.5rem;
+        padding: calc(0.25vw + 0.75rem);
         
         background-color: var(--color-gray-400);
         box-sizing: border-box;
         transition: background-color 250ms;
 
         &:hover {
-            background-color: var(--color-gray-200);
+            background-color: var(--color-gray-300);
         }
+    }
+    .active {
+        background-color: var(--color-gray-300);
     }
 }

@@ -7,6 +7,9 @@ imageAlt: application for exchange rates of crypto currencies
 tags:
   - post
   - featured
+  - javascript
+  - react
+  - api
 accentColor: "#beb9ff"
 description: to keep an eye on the crypto market
 teaserText: >-

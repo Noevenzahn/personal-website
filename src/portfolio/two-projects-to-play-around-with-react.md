@@ -11,6 +11,9 @@ imageAlt: preview of two applications
 tags:
   - post
   - featured
+  - javascript
+  - react
+  - api
 accentColor: "#70e3e1"
 ---
 ## The Advice Machine

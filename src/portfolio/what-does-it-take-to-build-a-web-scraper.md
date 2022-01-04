@@ -10,6 +10,7 @@ imageAlt: the first lines of code
 tags:
   - post
   - featured
+  - javascript
 accentColor: "#ffa56d"
 ---
 All we need is Express.js for a node.js server, the cheerio package to pick out HTML elements on a website, and Axios for our requests.
