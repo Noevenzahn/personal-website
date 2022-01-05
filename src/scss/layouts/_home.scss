@@ -9,7 +9,7 @@
     margin-bottom: calc(3.5vw + 4rem);
 }
 .about__section p {
-    max-width: 80rem;
+    max-width: var(--max-content-width);
     margin: 0 clamp(1rem, 2vw, 4rem) 0 clamp(2rem, 2vw + 1rem, 4rem);
 }
 .about__preview {
