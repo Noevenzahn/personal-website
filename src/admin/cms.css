@@ -45,6 +45,11 @@ body {
   max-width: 780px;
   line-height: 170%;
 }
+::selection {
+  background-color: var(--accent);
+  color: var(--color-gray-100);
+  -webkit-text-fill-color: var(--color-gray-100);
+}
 h1 {
   font-family: Trap;
   font-weight: 800;

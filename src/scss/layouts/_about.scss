@@ -10,6 +10,8 @@
     }
     .about__text {
         box-sizing: border-box;
+        margin: 0 clamp(2rem, 2vw + 1rem, 4rem);
+        max-width: 80rem;
     }
 }
 .resume {
@@ -25,14 +27,14 @@
 .date-info {
     display: flex;
     width: 100%;
-    max-width: var(--max-content-width);
-    padding: calc(2vw + 2rem);
+    max-width: calc(80rem + (clamp(2rem, 2vw + 1rem, 4rem) * 2));
     box-sizing: border-box;
 
     .description {
         width: 50%;
         font-size: var(--font-size-400);
         text-align: right;
+        margin-right: clamp(2rem, 2vw + 1rem, 4rem);
 
         p {
             margin-top: 0.5rem;
@@ -46,6 +48,8 @@
     .title {
         width: 50%;
         margin-top: 0.5rem;
+        margin-left: clamp(2rem, 2vw + 1rem, 4rem);
+
         
         font-size: var(--font-size-600);
         font-weight: bold;

@@ -10,7 +10,7 @@
 @use "components/skill";
 
 @use "layouts/about";
-@use "layouts/blog";
+@use "layouts/portfolio";
 @use "layouts/home";
 @use "layouts/post";
 @use "layouts/not_found";
@@ -27,7 +27,7 @@
 
     --max-content-width: 100rem;
 
-    --accent: #FFB700;
+    --accent: #FF2232;
     --background: #000000;
     --color-gray-400: #1F1F1F;
     --color-gray-300: #8c8b8b;

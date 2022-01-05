@@ -1,16 +1,18 @@
 .skillset {
-        display: grid;
-        place-items: center;
-
+    display: grid;
+    place-items: center;
+    
     .skill-list {
         display: flex;
+        margin-bottom: 5vw;
         padding: 0 2rem;
         box-sizing: border-box;
     }
     .skill {
         width: clamp(5.5rem, 17vw, 20rem);
         height: clamp(5.5rem, 17vw, 20rem);
-        margin: 1.5vw;
+        margin: 1vw;
+        padding: calc(0.5vw + 1rem);
         background-color: var(--color-gray-400);
         box-sizing: border-box;
     }
