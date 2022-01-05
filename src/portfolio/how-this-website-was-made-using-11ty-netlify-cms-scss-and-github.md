@@ -13,6 +13,9 @@ tags:
   - featured
   - sass
   - javascript
+technologies:
+  - javascript
+  - sass 
 accentColor: "#ff2232"
 ---
 In Design School, we have a course for CMS and the web. Our final project was to create a portfolio website for our design projects.

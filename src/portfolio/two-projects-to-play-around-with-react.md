@@ -14,6 +14,9 @@ tags:
   - javascript
   - react
   - api
+technologies:
+  - javascript
+  - react
 accentColor: "#70e3e1"
 ---
 ## The Advice Machine

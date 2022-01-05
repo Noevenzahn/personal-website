@@ -6,7 +6,7 @@
     margin-bottom: calc(5vw + 1rem);
     
     h1 {
-        margin: clamp(11rem, 10vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
+        margin: clamp(11rem, 12vw, 50rem) 0 clamp(2rem, 1vw, 12rem) 0;
     }
     .about__text {
         box-sizing: border-box;
@@ -14,44 +14,39 @@
         max-width: 80rem;
     }
 }
-.resume {
+#content__about {
     display: grid;
     place-items: center;
-    width: 100%;
-    margin: 6rem 0;
+    margin: 0 clamp(2rem, 2vw + 1rem, 4rem);
     
-    h2 {
+    .skill__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 80rem;
+        margin-bottom: clamp(0.75rem, 3vw, 8rem);
+    }
+    .skill {
+        padding: calc(0.5vw + 1rem);
+        background-color: var(--color-gray-400);
+        width: clamp(2.5rem, 10vw + 1rem, 10rem);
+        height: clamp(2.5rem, 10vw + 1rem, 10rem);
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    .skill__level {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 80rem;
+        margin-top: calc(3vw + 1.5rem);
         text-align: center;
-    }
-}
-.date-info {
-    display: flex;
-    width: 100%;
-    max-width: calc(80rem + (clamp(2rem, 2vw + 1rem, 4rem) * 2));
-    box-sizing: border-box;
-
-    .description {
-        width: 50%;
-        font-size: var(--font-size-400);
-        text-align: right;
-        margin-right: clamp(2rem, 2vw + 1rem, 4rem);
-
-        p {
-            margin-top: 0.5rem;
-        }
-        p:first-of-type {
-            margin-bottom: 0.5rem;
-            font-size: var(--font-size-600);
-            font-weight: bold;
-        }
-    }
-    .title {
-        width: 50%;
-        margin-top: 0.5rem;
-        margin-left: clamp(2rem, 2vw + 1rem, 4rem);
-
+        font-size: var(--font-size-500);
         
-        font-size: var(--font-size-600);
-        font-weight: bold;
+        p {
+            margin: calc(1vw + 1rem) 0;
+        }
     }
 }

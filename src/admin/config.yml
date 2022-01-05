@@ -18,4 +18,5 @@ collections:
       - { label: "image alt-text", name: "imageAlt", widget: "string" }
       - { label: "body", name: "body", widget: "markdown" }
       - { label: "tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "technologies", name: "technologies", widget: "list" }
       - { label: 'accent color', name: 'accentColor', widget: 'color', allowInput: true }

@@ -10,6 +10,9 @@ tags:
   - javascript
   - react
   - api
+technologies:
+  - javascript
+  - react
 accentColor: "#beb9ff"
 description: to keep an eye on the crypto market
 teaserText: >-

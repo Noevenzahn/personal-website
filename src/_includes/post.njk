@@ -17,11 +17,12 @@ layout: "post-base.njk"
         <div>
             <p class="teasertext">{{ teaserText }}</p>
 
+
+
         <div class="technology__tags">
-            <div class="tag"></div>
-            <div class="tag"></div>
-            <div class="tag"></div>
-            <div class="tag"></div>
+            {% for tech in technologies %}
+                <div class="tag"><img src="/assets/graphics/{{ tech }}-icon.svg" alt=""></div>
+            {%- endfor -%}
         </div>
         </div>
         <img class="post__image" src="{{ image }}" alt="{{ imageAlt }}">
