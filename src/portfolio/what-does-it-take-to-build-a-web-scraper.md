@@ -15,7 +15,7 @@ technologies:
   - javascript
 accentColor: "#ffa56d"
 ---
-All we need is Express.js for a node.js server, the cheerio package to pick out HTML elements on a website, and Axios for our requests.
+All we need is Express.js for a Node.js server, the cheerio package to pick out HTML elements on a website, and Axios for our requests.
 
 Fetch the HTML of a website, load it in with cheerio, and give it a class that the elements have you're looking for. Now you can define a function and execute it on each element with that class. I took the text and link from each element and stored it in an array. That's it! Now console.log your results! 
 
