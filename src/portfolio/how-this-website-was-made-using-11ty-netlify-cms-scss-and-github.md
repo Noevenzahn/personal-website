@@ -15,7 +15,7 @@ tags:
   - javascript
 technologies:
   - javascript
-  - sass 
+  - sass
 accentColor: "#ff2232"
 ---
 In Design School, we have a course for CMS and the web. Our final project was to create a portfolio website for our design projects.
@@ -32,8 +32,8 @@ Now it's possible to write more modular code: Layouts for pages or posts and com
 
 ![screenshot showing nunjucks code](/assets/images/portfolio-nunjucks-code.png)
 
-To keep the styling flexible, I split the SCSS into multiple files. So I have one file for the component itself and a corresponding SCSS styling file.
-The posts are saved in Markdown files with a YAML frontmatter block. This data can be referenced with Nunjucks. The frontmatter comes from the data I typed into the CMS, like the title, description, or thumbnail.
+To keep the styling maintainable, I split the SCSS into multiple files. So I have one file for the component itself and a corresponding SCSS styling file.
+The posts are saved in Markdown files with a YAML frontmatter block. This data can be referenced with Nunjucks. The frontmatter comes from the data I type into the CMS, like the title, description, or thumbnail.
 Speaking of which, can be easily customized in its config:
 
 ![screenshot showing the config.yml of the CMS](/assets/images/portfolio-cmsconfig-code.png)
