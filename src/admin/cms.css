@@ -1,44 +1,48 @@
 @font-face {
-  font-family: 'Trap';
-  src: url('../assets/fonts/Trap-ExtraBold.woff2') format('woff2'),
-       url('../assets/fonts/Trap-ExtraBold.woff') format('woff');
+  font-family: "Trap";
+  src: url("../assets/fonts/Trap-ExtraBold.woff2") format("woff2"),
+    url("../assets/fonts/Trap-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Trap';
-  src: url('../assets/fonts/Trap-Bold.woff2') format('woff2'),
-       url('../assets/fonts/Trap-Bold.woff') format('woff');
+  font-family: "Trap";
+  src: url("../assets/fonts/Trap-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Trap-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lexend';
-  src: url('../assets/fonts/Lexend-ExtraLight.woff2') format('woff2'),
-       url('../assets/fonts/Lexend-ExtraLight.woff') format('woff');
+  font-family: "Lexend";
+  src: url("../assets/fonts/Lexend-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/Lexend-ExtraLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lexend';
-  src: url('../assets/fonts/Lexend-Regular.woff2') format('woff2'),
-       url('../assets/fonts/Lexend-Regular.woff') format('woff');
+  font-family: "Lexend";
+  src: url("../assets/fonts/Lexend-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Lexend-Regular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 :root {
-  --accent: #FFB700;   
+  --accent: #ffb700;
   --background: #000000;
-  color: #ffffff;
+  --color-gray-100: #ffffff;
+
+  color: var(--color-gray-100);
   font-size: 1rem;
-  font-family: Lexend, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Lexend, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   display: flex;
   justify-content: center;
-  background-color: var(--background);   
+  background-color: var(--background);
 }
 body {
   padding: 1rem;
@@ -66,11 +70,13 @@ h2 {
   margin: 2rem 0 1rem 0;
   color: var(--accent);
 }
-div, p {
+div,
+p {
   font-size: 1.05rem;
   font-weight: 300;
 }
-strong, a {
+strong,
+a {
   color: var(--accent);
 }
 img {
@@ -80,5 +86,5 @@ img {
 
 /* remove color code from preview */
 .frame-content > div > div:last-child {
-  display: none
+  display: none;
 }
