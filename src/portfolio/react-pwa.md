@@ -25,5 +25,5 @@ This React application fetches cryptocurrency prices from the [CoinGecko API](ht
 
 ![live demo animation of the application](/assets/images/crypt-pwa.gif)
 
-It was my first project with API calls depending and changing on user input that I've created. I learned a lot about data fetching, used local storage the first time, and discovered the possibility of creating PWAs.
+I learned a lot about data fetching, used local storage the first time, and discovered the possibility of creating PWAs.
 Feel free to check out the [live demo](https://crypt.netlify.app/) and the [source code](https://github.com/Noevenzahn/crypt)!
