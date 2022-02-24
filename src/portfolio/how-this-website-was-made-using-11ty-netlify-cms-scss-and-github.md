@@ -33,14 +33,14 @@ Now it's possible to write more modular code: Layouts for pages or posts and com
 
 ![screenshot showing nunjucks code](/assets/images/portfolio-nunjucks-code.png)
 
-To keep the styling maintainable, I split the SCSS into multiple files. So I have one file for the component itself and a corresponding SCSS styling file.
-The posts are saved in Markdown files with a YAML frontmatter block. This data can be referenced with Nunjucks. The frontmatter comes from the data I type into the CMS, like the title, description, or thumbnail.
+To keep the styling maintainable, I split the SCSS into multiple files. Now there's one component file and a corresponding SCSS styling file.
+The posts are saved in Markdown files with a YAML frontmatter block. This data can be referenced with Nunjucks. The frontmatter comes from the data I type into the CMS, such as title, description, or thumbnail.
 Speaking of which, can be easily customized in its config:
 
 ![screenshot showing the config.yml of the CMS](/assets/images/portfolio-cmsconfig-code.png)
 
-The flexibility of changing the input fields this fast and using widgets like the color picker or image widget is neat. It's even possible to create custom CSS styles for the preview shown when creating a post.
+The flexibility of easily changing the input fields and using widgets like the color picker or image widget is neat. It's even possible to create custom CSS styles for the preview shown when creating a post.
 
 ## Final Thoughts
 
-All in all, I am satisfied with the outcome of the project. Because the time for the project was limited, I might add or change some things here and there. If you want to have a look at the source code, here's the GitHub [repository](https://github.com/Noevenzahn/personal-website).
+All in all, I am satisfied with the outcome of the project. As time for the project was limited, I might add or change some things here and there. If you want to have a look at the source code, here's the GitHub [repository](https://github.com/Noevenzahn/personal-website).
