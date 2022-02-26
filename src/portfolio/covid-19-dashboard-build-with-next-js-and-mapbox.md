@@ -21,9 +21,8 @@ technologies:
   - nextjs
 accentColor: "#ff5d25"
 ---
-
 As soon as I heard of Next.js, I was curious. The provided features are just incredible. Especially the option to use a specific rendering method on a component level made me think about possible use cases. So I planned a project utilizing multiple rendering methods from Next: A COVID-19 dashboard with data from the [Open Disease API](https://github.com/disease-sh/api). Planned features: a world map, line charts, and pie charts using Mapbox and Chart.js.
-So far, the world map has been finished.
+So far, the world map & an overview page has been finished.
 
 ## How Mapbox Works
 
