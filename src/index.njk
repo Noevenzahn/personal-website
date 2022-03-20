@@ -14,7 +14,7 @@ layout: "base.njk"
             <a href="/portfolio/">my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • <span class="text__marking">my work</span> • my work • </a>
         </div>
         
-        {%- for post in collections.featured -%}
+        {%- for post in collections.featured | reverse -%}
             <div class="project__preview marquee">
                 <p><a href="{{ post.url }}">
                     <span class="text__marking">{{ post.data.titleBeginning }}</span> {{ post.data.titleMiddle }} <span class="text__marking">{{ post.data.titleEnd }}</span> • 
