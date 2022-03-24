@@ -6,8 +6,8 @@ titleEnd: Next.js and Mapbox
 teaserText: This map shows the worldwide spread of COVID-19 in relation to the
   selected data. More data for each country is available on hover. The project
   is still in development and will eventually evolve to a dashboard.
-image: /assets/images/covid-dashboard-header.png
-imageAlt: world map of the project
+image: /assets/images/covid-dashboard-header.jpg
+imageAlt: startpage
 tags:
   - post
   - featured
@@ -35,4 +35,4 @@ The style of the map can be customized by using one of the [Mapbox-owned styles]
 
 ![animation showing the application when used](/assets/images/covid-dashboard.gif)
 
-Since I'm still working on this project, feel free to revisit this post and have a look at the progress! To check the current state of development, head over to the [live demo](https://covid.waberski.io/) or [repository](https://github.com/Noevenzahn/covid-19-dashboard).
+Since I'm still working on this project, feel free to revisit this post and have a look at the progress! To check the current state of development, head over to the [live demo](https://dashboard-covid19.vercel.app/worldmap) or [repository](https://github.com/Noevenzahn/covid-19-dashboard).
