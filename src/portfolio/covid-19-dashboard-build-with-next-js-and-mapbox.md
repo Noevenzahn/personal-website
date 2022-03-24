@@ -31,7 +31,7 @@ Another difference to normal React is that the map doesn't resize correctly in N
 
 The style of the map can be customized by using one of the [Mapbox-owned styles](https://docs.mapbox.com/api/maps/styles/#mapbox-styles) or creating a unique one with [Mapbox Studio](https://studio.mapbox.com/).
 
-## The Current State of the Application
+## The World Map in Action
 
 ![animation showing the application when used](/assets/images/covid-dashboard.gif)
 
