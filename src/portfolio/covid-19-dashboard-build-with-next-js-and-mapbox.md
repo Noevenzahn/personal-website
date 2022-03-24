@@ -6,7 +6,7 @@ titleEnd: Next.js and Mapbox
 teaserText: This dashboard shows relevant data to the spread of COVID-19 in
   Germany. It has a world map for a worldwide overview of cases, recovered, and
   death numbers. More data for each country is available on hover.
-image: /assets/images/covid-dashboard-header.png
+image: /assets/images/covid-dashboard-header.jpg
 imageAlt: world map of the project
 tags:
   - post
