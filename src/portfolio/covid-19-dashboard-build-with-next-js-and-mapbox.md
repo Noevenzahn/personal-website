@@ -3,11 +3,11 @@ title: COVID-19 Dashboard Build With Next.js and Mapbox
 titleBeginning: ""
 titleMiddle: "COVID-19 Dashboard Build With "
 titleEnd: Next.js and Mapbox
-teaserText: This map shows the worldwide spread of COVID-19 in relation to the
-  selected data. More data for each country is available on hover. The project
-  is still in development and will eventually evolve to a dashboard.
-image: /assets/images/covid-dashboard-header.jpg
-imageAlt: startpage
+teaserText: This dashboard shows relevant data to the spread of COVID-19 in
+  Germany. It has a world map for a worldwide overview of cases, recovered, and
+  death numbers. More data for each country is available on hover.
+image: /assets/images/covid-dashboard-header.png
+imageAlt: world map of the project
 tags:
   - post
   - featured
