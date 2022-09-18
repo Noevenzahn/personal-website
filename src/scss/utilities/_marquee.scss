@@ -44,7 +44,7 @@
         width: 100%;
         overflow: hidden;
         box-sizing: border-box;
-        
+    
         & p {
             margin: 0;
             animation: marquee 60s linear infinite;
@@ -54,9 +54,20 @@
             animation-play-state: paused;
         }
     }
+    .project__preview:nth-child(2n) p {
+        animation: marquee-reverse 60s linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
     @keyframes marquee {
         0%   { transform: translate(10px, 0); }
         50% { transform: translate(-200%, 0); }
         100%   { transform: translate(10px, 0); }
+    }
+    @keyframes marquee-reverse {
+        0%   { transform: translate(-200%, 0); }
+        50% { transform: translate(10px, 0); }
+        100%   { transform: translate(-200%, 0); }
     }
 }
